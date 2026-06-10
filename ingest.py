@@ -3,7 +3,10 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 import os
 
-# Files to load
+# ==========================
+# Documents
+# ==========================
+
 doc_files = [
     "docs/customer_api.txt",
     "docs/storekeeper_api.txt",
@@ -11,22 +14,45 @@ doc_files = [
     "docs/superadmin_api.txt"
 ]
 
+# ==========================
+# Better Chunking
+# ==========================
+
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,
-    chunk_overlap=200
+    chunk_size=1200,
+    chunk_overlap=300
 )
+
+# ==========================
+# Embedding Model
+# ==========================
 
 embedding_model = SentenceTransformer(
     "BAAI/bge-base-en-v1.5"
 )
 
+# ==========================
+# ChromaDB
+# ==========================
+
 client = chromadb.PersistentClient(
     path="./chroma_db"
 )
 
-collection = client.get_or_create_collection(
+# Delete old collection if exists
+try:
+    client.delete_collection("sahachari_docs")
+    print("Old collection deleted.")
+except:
+    pass
+
+collection = client.create_collection(
     name="sahachari_docs"
 )
+
+# ==========================
+# Process Files
+# ==========================
 
 chunk_count = 0
 
@@ -39,18 +65,34 @@ for file in doc_files:
 
     chunks = splitter.split_text(text)
 
+    print(f"Chunks created: {len(chunks)}")
+
     for i, chunk in enumerate(chunks):
 
-        embedding = embedding_model.encode(chunk).tolist()
+        embedding = embedding_model.encode(
+            chunk
+        ).tolist()
 
         collection.add(
-            ids=[f"{os.path.basename(file)}_{i}"],
-            documents=[chunk],
-            metadatas=[{"source": file}],
-            embeddings=[embedding]
+            ids=[
+                f"{os.path.basename(file)}_{i}"
+            ],
+            documents=[
+                chunk
+            ],
+            metadatas=[
+                {
+                    "source": os.path.basename(file)
+                }
+            ],
+            embeddings=[
+                embedding
+            ]
         )
 
         chunk_count += 1
 
-print(f"\nTotal chunks stored: {chunk_count}")
+print("\n=========================")
+print(f"Total chunks stored: {chunk_count}")
+print("=========================")
 print("Knowledge Base Created Successfully")
