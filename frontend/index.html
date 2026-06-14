@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahachari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap Icons — icon font library (like Font Awesome) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Our custom CSS — loaded AFTER Bootstrap so our styles can override Bootstrap's -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-wrapper" id="appWrapper">
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <!-- SVG icon: a small "brain circuit" style logo -->
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="var(--accent)"/>
+              <path d="M8 12h2v2H8v-2zm3-3h2v2h-2V9zm3 3h2v2h-2v-2z" fill="var(--bg-primary)"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Sahachari</span>
+          </div>
+        </div>
+
+        <!-- Close button — only visible on mobile -->
+        <button class="sidebar-close-btn d-lg-none" onclick="closeSidebar()" aria-label="Close sidebar">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+           <!-- Dark/Light Mode Toggle -->
+        <button class="theme-toggle-btn" onclick="toggleTheme()" id="themeToggleBtn" title="Toggle dark/light mode">
+          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+        </button>
+
+      <!-- NEW CHAT BUTTON -->
+      <div class="sidebar-actions">
+        <button class="new-chat-btn" onclick="startNewChat()" id="newChatBtn">
+          <i class="bi bi-plus-lg"></i>
+          <span>New Chat</span>
+        </button>
+      </div>
+
+      <!-- CHAT HISTORY LIST -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-label">Recent Chats</div>
+
+        <ul class="chat-history-list" id="chatHistoryList">
+          <li class="history-empty">
+            <i class="bi bi-chat-dots"></i>
+            <span>no chats yet</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SIDEBAR FOOTER: Settings & Theme Toggle -->
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-divider"></div>
+
+      </div>
+    </aside>
+    <!-- END SIDEBAR -->
+
+    <!-- ============================================================
+         MAIN CONTENT AREA
+         ============================================================ -->
+    <main class="main-content" id="mainContent">
+      <!--
+        <main> is a semantic HTML5 element meaning "the primary content".
+        Screenreaders jump directly to this. Only one <main> per page.
+      -->
+
+      <!-- MESSAGES AREA — Scrollable region where chat appears -->
+      <div class="messages-container" id="messagesContainer">
+        <!--
+          This div is scrollable. All messages (user and bot) appear here.
+          JavaScript appends new <div class="message"> elements here on every send.
+          We set overflow-y: auto in CSS so it scrolls vertically.
+        -->
+
+        <!-- WELCOME SCREEN — shown when no messages exist yet -->
+        <div class="welcome-screen" id="welcomeScreen">
+          <div class="welcome-content">
+            <h2 class="welcome-title">How can I help you today?</h2>
+            <p class="welcome-subtitle">Ask a question to search across available documentation.</p>
+
+            <!-- Suggested prompts — clicking them auto-fills the input -->
+            <div class="suggested-prompts">
+              <div class="suggested-label">Try asking:</div>
+              <div class="prompt-chips">
+                <button class="prompt-chip" onclick="usePrompt(this)">What documents are available?</button>
+                <button class="prompt-chip" onclick="usePrompt(this)">Summarize the key topics</button>
+                <button class="prompt-chip" onclick="usePrompt(this)">What are the main guidelines?</button>
+                <button class="prompt-chip" onclick="usePrompt(this)">How does the process work?</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END WELCOME SCREEN -->
+
+        <!-- Messages are injected here by JavaScript -->
+      </div>
+      <!-- END MESSAGES AREA -->
+
+      <!-- INPUT AREA — Fixed at bottom of chat -->
+      <div class="input-area" id="inputArea">
+        <!--
+          This entire section sticks to the bottom.
+          It contains: the textarea, send button, and a character/disclaimer row.
+        -->
+
+        <div class="input-wrapper">
+          <!-- The text input -->
+          <div class="input-box-container">
+            <textarea
+              id="userInput"
+              class="user-input"
+              placeholder="Ask Sahachari anything from the documents..."
+              rows="1"
+              maxlength="2000"
+              aria-label="Chat input"
+              onkeydown="handleKeyDown(event)"
+              oninput="autoResize(this); updateCharCount(this)"
+            ></textarea>
+            <!--
+              rows="1" → starts as one line, grows via autoResize()
+              maxlength="2000" → prevents very long queries
+              onkeydown → detects Enter key to send
+              oninput → fires every keystroke: auto-resize + char count update
+            -->
+
+            <!-- Send Button -->
+            <button
+              class="send-btn"
+              id="sendBtn"
+              onclick="sendMessage()"
+              title="Send message (Enter)"
+              aria-label="Send message"
+              disabled
+            >
+              <!--
+                disabled by default — enabled by JS when there's text in input.
+                This prevents sending empty messages.
+              -->
+              <i class="bi bi-send-fill" id="sendIcon"></i>
+            </button>
+          </div>
+
+          <!-- Below input: character count + disclaimer -->
+          <div class="input-meta">
+            <span class="char-count" id="charCount">0 / 2000</span>
+            <span class="input-disclaimer">
+              Answers are based on indexed documents only.
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- END INPUT AREA -->
+
+    </main>
+    <!-- END MAIN CONTENT -->
+
+  </div>
+  <!-- END APP WRAPPER -->
+
+  <!-- ================================================================
+       SOURCE DOCUMENT MODAL
+       ================================================================
+    When user clicks "View Sources" on a bot message, this modal pops up
+    showing which document chunks were used to generate the answer.
+
+    Bootstrap's modal component handles show/hide animation automatically.
+    We just call bootstrap.Modal.getInstance('#sourceModal').show()
+  -->
+  <div class="modal fade" id="sourceModal" tabindex="-1" aria-labelledby="sourceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content source-modal-content">
+
+        <div class="modal-header source-modal-header">
+          <div class="modal-title-group">
+            <i class="bi bi-file-earmark-text"></i>
+            <h5 class="modal-title" id="sourceModalLabel">Source Documents</h5>
+          </div>
+          <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <div class="modal-body source-modal-body" id="sourceModalBody">
+          <!-- Source chunks are injected here by JavaScript when modal opens -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END SOURCE MODAL -->
+
+  <!-- ================================================================
+       TOAST NOTIFICATION — Appears at bottom right for status messages
+       ================================================================
+    Used for: "Copied!", "Error", "Chat cleared", etc.
+  -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+    <div id="appToast" class="toast app-toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastBody">
+          <!-- Message injected by JS -->
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- END TOAST -->
+
+  <!-- ================================================================
+       SCRIPTS — Loaded at bottom of body (IMPORTANT!)
+       ================================================================
+    Why at the bottom?
+    If scripts were in <head>, they'd try to run before the HTML elements
+    exist yet, causing "Cannot find element" errors. At the bottom,
+    all HTML is already parsed when scripts run.
+  -->
+
+  <!-- Bootstrap 5 JavaScript Bundle (includes Popper.js for dropdowns/modals) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+
+  <!-- Our custom JavaScript — loaded AFTER Bootstrap so we can use Bootstrap's JS APIs -->
+  <script src="script.js"></script>
+
+</body>
+</html>
