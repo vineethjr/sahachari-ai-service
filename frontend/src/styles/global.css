@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
 
-/* ═══════════════════════════════
-   THEME VARIABLES
-═══════════════════════════════ */
-
 .app.dark {
   --bg-main:        #0b0f19;
   --bg-sidebar:     #070b14;
@@ -36,10 +32,6 @@
   --accent-hover:   #005f8a;
 }
 
-/* ═══════════════════════════════
-   RESET
-═══════════════════════════════ */
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -51,10 +43,6 @@ body {
   font-size: 15px;
 }
 
-/* ═══════════════════════════════
-   APP LAYOUT
-═══════════════════════════════ */
-
 .app {
   display: flex;
   height: 100vh;
@@ -62,10 +50,6 @@ body {
   color: var(--text-main);
   transition: background 0.25s, color 0.25s;
 }
-
-/* ═══════════════════════════════
-   SIDEBAR
-═══════════════════════════════ */
 
 .sidebar {
   width: 260px;
@@ -105,7 +89,7 @@ body {
   flex-shrink: 0;
 }
 
-/* Theme toggle */
+/* toggle */
 .theme-toggle {
   margin: 0 0 14px 0;
   background: transparent;
@@ -183,10 +167,6 @@ body {
   color: var(--text-main);
 }
 
-/* ═══════════════════════════════
-   MAIN AREA
-═══════════════════════════════ */
-
 .main {
   flex: 1;
   display: flex;
@@ -197,10 +177,6 @@ body {
   transition: background 0.25s;
 }
 
-/* ═══════════════════════════════
-   CHAT BOX
-═══════════════════════════════ */
-
 .chat-box {
   flex: 1;
   overflow-y: auto;
@@ -208,10 +184,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* ═══════════════════════════════
-   WELCOME SCREEN
-═══════════════════════════════ */
 
 .welcome {
   margin: auto;
@@ -263,9 +235,6 @@ body {
   color: #000000;
 }
 
-/* ═══════════════════════════════
-   MESSAGES
-═══════════════════════════════ */
 
 .msg {
   max-width: 70%;
@@ -316,10 +285,6 @@ pre {
   margin-top: 6px;
 }
 
-/* ═══════════════════════════════
-   TYPING INDICATOR
-═══════════════════════════════ */
-
 .typing {
   color: var(--text-muted);
   margin: 10px 12px;
@@ -345,10 +310,6 @@ pre {
   50%       { transform: translateY(-5px); opacity: 1; }
 }
 
-/* ═══════════════════════════════
-   COPY BUTTON
-═══════════════════════════════ */
-
 .copy-btn {
   background: transparent;
   border: 1px solid var(--border-soft);
@@ -370,9 +331,6 @@ pre {
   color: var(--text-muted);
 }
 
-/* ═══════════════════════════════
-   SOURCES
-═══════════════════════════════ */
 
 .sources {
   margin: 4px 12px 8px;
@@ -406,10 +364,6 @@ pre {
   border: 1px solid var(--border);
   transition: background 0.25s;
 }
-
-/* ═══════════════════════════════
-   INPUT AREA
-═══════════════════════════════ */
 
 .input-box {
   padding: 14px 20px 18px;
@@ -465,18 +419,35 @@ pre {
   transform: scale(1.02);
 }
 
-/* ═══════════════════════════════
-   SCROLLBAR
-═══════════════════════════════ */
+.send-btn {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 12px;
+  background: #00d4ff;
+  color: #fff;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s ease;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+}
+
+.send-btn svg {
+  width: 40px;
+  height: 40px;
+}
 
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border-soft); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
-
-/* ═══════════════════════════════
-   MOBILE
-═══════════════════════════════ */
 
 @media (max-width: 768px) {
   .sidebar { width: 200px; min-width: 200px; }

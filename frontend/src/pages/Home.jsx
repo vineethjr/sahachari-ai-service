@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useChat } from "../hooks/useChat"
-import { FiMoon, FiSun } from "react-icons/fi"
+import { FiSend, FiMoon, FiSun } from "react-icons/fi"
 import Message from "../components/Message"
 import Sources from "../components/Sources"
 import Typing from "../components/Typing"
@@ -130,7 +130,9 @@ export default function Home() {
             }}
           />
 
-          <button onClick={handleSend}>Send</button>
+          <button className="send-btn" onClick={handleSend}>
+            <FiSend/>
+            </button>
 
         </div>
 
