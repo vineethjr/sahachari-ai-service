@@ -1,98 +1,102 @@
+import re
+import os
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import chromadb
-import os
 
-# ==========================
-# Documents
-# ==========================
+# Files that use the structured "==== HEADER ====" Q&A format.
+# These get split by section, not by raw character count, so each
+# chunk stays a single self-contained question + answer.
+STRUCTURED_FILES = [
+    "docs/sahachari_knowledge_base.txt",
+]
 
-doc_files = [
+# Files that are plain technical docs without that structure — these
+# keep using the generic recursive character splitter.
+GENERIC_FILES = [
     "docs/customer_api.txt",
     "docs/storekeeper_api.txt",
     "docs/delivery_api.txt",
-    "docs/superadmin_api.txt"
+    "docs/superadmin_api.txt",
 ]
 
-# ==========================
-# Better Chunking
-# ==========================
-
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1200,
-    chunk_overlap=300
+    chunk_size=1000,
+    chunk_overlap=200
 )
 
-# ==========================
-# Embedding Model
-# ==========================
+embedding_model = SentenceTransformer("BAAI/bge-base-en-v1.5")
 
-embedding_model = SentenceTransformer(
-    "BAAI/bge-base-en-v1.5"
-)
+client = chromadb.PersistentClient(path="./chroma_db")
+collection = client.get_or_create_collection(name="sahachari_docs")
 
-# ==========================
-# ChromaDB
-# ==========================
 
-client = chromadb.PersistentClient(
-    path="./chroma_db"
-)
+def split_by_sections(text: str) -> list[str]:
+    """
+    Split a knowledge-base file into one chunk per '==== HEADER ====' section.
+    Each returned chunk includes its own header line, so the embedding for
+    that chunk captures both the question and its full answer together,
+    instead of being diluted by neighboring unrelated sections.
 
-# Delete old collection if exists
-try:
-    client.delete_collection("sahachari_docs")
-    print("Old collection deleted.")
-except:
-    pass
+    Matches the literal separator-header-separator-body pattern directly,
+    so it doesn't break if there's stray content before the first separator
+    (unlike a naive alternating-position split on '====').
+    """
+    pattern = re.compile(
+        r"={5,}\s*\n([^\n]+)\n={5,}\s*\n(.*?)(?=\n={5,}|\Z)",
+        re.DOTALL,
+    )
+    matches = pattern.findall(text)
+    sections = [f"{header.strip()}\n{body.strip()}" for header, body in matches]
 
-collection = client.create_collection(
-    name="sahachari_docs"
-)
+    # Preserve any leading content before the first separator as its own
+    # chunk, so nothing gets silently dropped (e.g. a stray note at the top).
+    first_sep_idx = text.find("====")
+    if first_sep_idx > 0:
+        leading = text[:first_sep_idx].strip()
+        if leading:
+            sections.insert(0, leading)
 
-# ==========================
-# Process Files
-# ==========================
+    return [s for s in sections if s]
+
 
 chunk_count = 0
 
-for file in doc_files:
+for file in STRUCTURED_FILES:
+    print(f"Processing {file} (section-based chunking)")
+    with open(file, "r", encoding="utf-8") as f:
+        text = f.read()
 
-    print(f"Processing {file}")
+    chunks = split_by_sections(text)
+    print(f"  -> {len(chunks)} section chunks")
 
+    for i, chunk in enumerate(chunks):
+        embedding = embedding_model.encode(chunk).tolist()
+        collection.upsert(
+            ids=[f"{os.path.basename(file)}_{i}"],
+            documents=[chunk],
+            metadatas=[{"source": file}],
+            embeddings=[embedding],
+        )
+        chunk_count += 1
+
+for file in GENERIC_FILES:
+    print(f"Processing {file} (character-based chunking)")
     with open(file, "r", encoding="utf-8") as f:
         text = f.read()
 
     chunks = splitter.split_text(text)
-
-    print(f"Chunks created: {len(chunks)}")
+    print(f"  -> {len(chunks)} chunks")
 
     for i, chunk in enumerate(chunks):
-
-        embedding = embedding_model.encode(
-            chunk
-        ).tolist()
-
-        collection.add(
-            ids=[
-                f"{os.path.basename(file)}_{i}"
-            ],
-            documents=[
-                chunk
-            ],
-            metadatas=[
-                {
-                    "source": os.path.basename(file)
-                }
-            ],
-            embeddings=[
-                embedding
-            ]
+        embedding = embedding_model.encode(chunk).tolist()
+        collection.upsert(
+            ids=[f"{os.path.basename(file)}_{i}"],
+            documents=[chunk],
+            metadatas=[{"source": file}],
+            embeddings=[embedding],
         )
-
         chunk_count += 1
 
-print("\n=========================")
-print(f"Total chunks stored: {chunk_count}")
-print("=========================")
+print(f"\nTotal chunks stored: {chunk_count}")
 print("Knowledge Base Created Successfully")
