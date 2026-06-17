@@ -88,27 +88,25 @@ def get_answer(query):
     context = "\n\n".join(top_chunks)
 
     prompt = f"""
-You are an API Documentation Assistant.
+    You are Sahachari API Assistant.
 
-Answer ONLY from the context below.
+    Answer ONLY from the provided documentation.
 
-If an endpoint exists, include:
-- Endpoint
-- Required fields
-- Short explanation
+    Rules:
+    - Be specific.
+    - If endpoints exist, list them.
+    - If request body exists, show it.
+    - If answer is not present, say:
+    "Information not found in documentation."
 
-Do NOT invent information.
-Do NOT give generic advice.
-Do NOT continue documentation.
+    Context:
+    {context}
 
-Context:
-{context}
+    Question:
+    {query}
 
-Question:
-{query}
-
-Answer:
-"""
+    Answer:
+    """
 
     response = generator(
         prompt,
