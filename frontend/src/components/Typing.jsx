@@ -1,7 +1,7 @@
 export default function Typing() {
   return (
     <div className="typing">
-      Thinking
+      Sahachari is Thinking
       <span></span><span></span><span></span>
     </div>
   )

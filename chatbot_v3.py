@@ -3,10 +3,6 @@ from sentence_transformers import SentenceTransformer
 from FlagEmbedding import FlagReranker
 from transformers import pipeline
 
-# =========================
-# LOAD MODELS
-# =========================
-
 print("Loading Embedding Model...")
 embedding_model = SentenceTransformer(
     "BAAI/bge-base-en-v1.5"
@@ -23,10 +19,6 @@ generator = pipeline(
     model="Qwen/Qwen2.5-0.5B-Instruct"
 )
 
-# =========================
-# CONNECT CHROMADB
-# =========================
-
 print("Connecting to ChromaDB...")
 
 client = PersistentClient(
@@ -39,10 +31,6 @@ collection = client.get_collection(
 
 print("\nSahachari AI Assistant Ready!")
 print("Type 'exit' to quit.\n")
-
-# =========================
-# CHAT LOOP
-# =========================
 
 while True:
 
@@ -66,17 +54,9 @@ while True:
 
     try:
 
-        # =========================
-        # STEP 1 - EMBEDDING
-        # =========================
-
         query_embedding = embedding_model.encode(
             query
         ).tolist()
-
-        # =========================
-        # STEP 2 - RETRIEVAL
-        # =========================
 
         results = collection.query(
             query_embeddings=[query_embedding],
@@ -84,10 +64,6 @@ while True:
         )
 
         docs = results["documents"][0]
-
-        # =========================
-        # STEP 3 - RERANKING
-        # =========================
 
         scores = reranker.compute_score(
             [[query, doc] for doc in docs]
@@ -99,10 +75,6 @@ while True:
             reverse=True
         )
 
-        # =========================
-        # STEP 4 - TOP CONTEXT
-        # =========================
-
         top_chunks = [
             doc[:500]
             for doc, score in ranked_docs[:2]
@@ -113,11 +85,6 @@ while True:
         print("\n===== RETRIEVED CONTEXT =====\n")
         print(context[:1000])
         print("\n=============================\n")
-
-        # =========================
-        # STEP 5 - PROMPT
-        # =========================
-
         prompt = f"""
 You are a documentation-based assistant.
 
@@ -138,10 +105,6 @@ QUESTION:
 ANSWER:
 """
 
-        # =========================
-        # STEP 6 - GENERATE ANSWER
-        # =========================
-
         response = generator(
     prompt,
     max_new_tokens=40,
@@ -156,10 +119,6 @@ ANSWER:
         final_answer = response[0][
             "generated_text"
         ].strip()
-
-        # =========================
-        # OUTPUT
-        # =========================
 
         print("\nAssistant:")
         print(final_answer)

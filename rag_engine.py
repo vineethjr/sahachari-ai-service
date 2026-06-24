@@ -39,10 +39,6 @@ collection = client.get_collection(
 
 print("Collection Size:", collection.count())
 
-# ==========================
-# Main Function
-# ==========================
-
 def get_answer(query):
 
     # Create embedding

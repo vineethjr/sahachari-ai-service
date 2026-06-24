@@ -60,7 +60,57 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  transition: background 0.25s, border-color 0.25s;
+  overflow:hidden;
+  transition: width 0.3s ease, min-width 0.3s ease,padding 0.3s ease, background 0.25s, border-color 0.25s;
+}
+
+
+.sidebar.open {
+  width: 260px;
+  min-width: 260px;
+}
+
+.sidebar.collapsed {
+  width: 0;
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  background: var(--bg-sidebar);
+  color: var(--text-main);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+
+  z-index: 999;
+}
+
+.menu-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.menu-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .logo {
@@ -81,11 +131,11 @@ body {
   background-clip: text;
 }
 
-.logo-dot {
+.logo-img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--accent);
+  object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -169,6 +219,7 @@ body {
 
 .main {
   flex: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--bg-main);
@@ -451,5 +502,13 @@ pre {
 
 @media (max-width: 768px) {
   .sidebar { width: 200px; min-width: 200px; }
+   .sidebar.open {
+    width: 200px;
+    min-width: 200px;
+  }
+    .sidebar.collapsed {
+    width: 0;
+    min-width: 0;
+  }
   .msg { max-width: 85%; }
 }

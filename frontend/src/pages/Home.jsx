@@ -1,14 +1,17 @@
 import { useState } from "react"
+import {FiMenu} from "react-icons/fi"
 import { useChat } from "../hooks/useChat"
 import { FiSend, FiMoon, FiSun } from "react-icons/fi"
 import Message from "../components/Message"
 import Sources from "../components/Sources"
 import Typing from "../components/Typing"
+import logo from "../logo/logo-sahachari.png"
 
 export default function Home() {
   const chat = useChat()
   const [input, setInput] = useState("")
   const [theme, setTheme] = useState("dark")
+  const [sidebarOpen, setSidebarOpen] = useState(true)
 
   const toggleTheme = () => {
     setTheme(prev => (prev === "dark" ? "light" : "dark"))
@@ -25,11 +28,14 @@ export default function Home() {
     <div className={`app ${theme}`}>
 
       {/* SIDEBAR */}
-      <div className="sidebar">
-
-        {/* LOGO */}
+      <div className={`sidebar ${sidebarOpen ? "open" : "collapsed"}`}>
+        {sidebarOpen && (
+          <>
         <div className="logo">
-          <div className="logo-dot"></div>
+          <img
+          src={logo}
+          alt="Sahachari Logo"
+          className="logo-img"/>
           <span>Sahachari</span>
         </div>
 
@@ -68,10 +74,18 @@ export default function Home() {
             ))
           )}
         </div>
+        </>
+        )}
       </div>
 
       {/* MAIN AREA */}
       <div className="main">
+        <button
+        className="menu-btn"
+        onClick={()=> setSidebarOpen(!sidebarOpen)}
+        >
+          <FiMenu />
+        </button>
 
         {/* CHAT BOX */}
         <div className="chat-box">

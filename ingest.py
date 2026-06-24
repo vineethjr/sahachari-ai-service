@@ -3,10 +3,6 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 import os
 
-# ==========================
-# Documents
-# ==========================
-
 doc_files = [
     "docs/customer_api.txt",
     "docs/storekeeper_api.txt",
@@ -14,26 +10,14 @@ doc_files = [
     "docs/superadmin_api.txt"
 ]
 
-# ==========================
-# Better Chunking
-# ==========================
-
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=1200,
     chunk_overlap=300
 )
 
-# ==========================
-# Embedding Model
-# ==========================
-
 embedding_model = SentenceTransformer(
     "BAAI/bge-base-en-v1.5"
 )
-
-# ==========================
-# ChromaDB
-# ==========================
 
 client = chromadb.PersistentClient(
     path="./chroma_db"
@@ -49,10 +33,6 @@ except:
 collection = client.create_collection(
     name="sahachari_docs"
 )
-
-# ==========================
-# Process Files
-# ==========================
 
 chunk_count = 0
 
