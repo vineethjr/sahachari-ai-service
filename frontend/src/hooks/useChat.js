@@ -78,10 +78,10 @@ export function useChat() {
       const res = await sendMessage(text, history)
 
       const botMsg = {
-        role: "assistant",
-        content: res.reply,
-        sources: []
-      }
+      role: "assistant",
+      content: res.answer,
+      source: res.source || "Unknown Source"
+    }
 
       setChats(prev =>
         prev.map(c =>
