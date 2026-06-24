@@ -57,33 +57,37 @@ def get_answer(query):
     )
 
     docs = results["documents"][0]
+    metadatas = results["metadatas"][0]
 
     # Rerank
     scores = reranker.compute_score(
-        [[query, doc] for doc in docs]
-    )
+    [[query, doc] for doc in docs]
+)
 
-    ranked_docs = sorted(
-        zip(docs, scores),
-        key=lambda x: x[1],
-        reverse=True
-    )
+    ranked_results = sorted(
+    zip(docs, metadatas, scores),
+    key=lambda x: x[2],
+    reverse=True
+)
+    best_doc = ranked_results[0][0]
+    best_metadata = ranked_results[0][1]
 
     # Debugging
     print("\n===== TOP RERANKED CHUNKS =====")
 
-    for i, (doc, score) in enumerate(ranked_docs[:5]):
+    for i, (doc, metadata, score) in enumerate(ranked_results[:5]):
         print(f"\nChunk {i+1}")
         print("Score:", score)
+        print("Source:", metadata["source"])
         print(doc[:300])
 
     # Top 3 chunks
     top_chunks = [
-        doc
-        for doc, score in ranked_docs[:3]
-    ]
+    doc
+    for doc, meta, score in ranked_results[:3]
+]
 
-    best_chunk = ranked_docs[0][0]
+    best_chunk = ranked_results[0][0]
 
     context = "\n\n".join(top_chunks)
 
@@ -118,6 +122,6 @@ def get_answer(query):
     answer = response[0]["generated_text"].strip()
 
     return {
-        "answer": answer,
-        "source": best_chunk[:300]
-    }
+    "answer": answer,
+    "source": best_metadata["source"]
+}
