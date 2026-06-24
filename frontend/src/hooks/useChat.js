@@ -2,7 +2,7 @@ import { useState, useRef } from "react"
 import { sendMessage } from "../services/api"
 
 export function useChat() {
-  const [chats, setChats] = useState([]) // all conversations
+  const [chats, setChats] = useState([])
   const [activeChatId, setActiveChatId] = useState(null)
   const [loading, setLoading] = useState(false)
 
@@ -16,32 +16,26 @@ export function useChat() {
     }, 100)
   }
 
-  // CREATE NEW CHAT
   const newChat = () => {
     const id = Date.now()
-
     const chat = {
       id,
       title: "New Chat",
       messages: []
     }
-
     setChats(prev => [chat, ...prev])
     setActiveChatId(id)
   }
 
-  // SWITCH CHAT
   const openChat = (id) => {
     setActiveChatId(id)
   }
 
-  // SEND MESSAGE
   const send = async (text) => {
     if (!text.trim()) return
 
     let chatId = activeChatId
 
-    // if no chat exists, create one
     if (!chatId) {
       const id = Date.now()
       chatId = id
@@ -61,27 +55,33 @@ export function useChat() {
     setChats(prev =>
       prev.map(c =>
         c.id === chatId
-          ? { ...c, messages: [...c.messages, userMsg],
-            title:
-            c.messages.length ===0
-            ? text.slice(0, 35)
-            : c.title
-        }
-            :c
+          ? {
+              ...c,
+              messages: [...c.messages, userMsg],
+              title: c.messages.length === 0 ? text.slice(0, 35) : c.title
+            }
+          : c
       )
     )
 
     setLoading(true)
     scrollToBottom()
 
+    // build history in the format backend expects
+    const currentChat = chats.find(c => c.id === chatId)
+    const history = (currentChat?.messages || []).map(m => ({
+      role: m.role === "assistant" ? "model" : "user",
+      parts: [{ text: m.content }]
+    }))
+
     try {
-      const res = await sendMessage(text)
+      const res = await sendMessage(text, history)
 
       const botMsg = {
-        role: "assistant",
-        content: res.answer,
-        sources: res.sources || []
-      }
+      role: "assistant",
+      content: res.answer,
+      source: res.source || "Unknown Source"
+    }
 
       setChats(prev =>
         prev.map(c =>
@@ -89,9 +89,7 @@ export function useChat() {
             ? {
                 ...c,
                 messages: [...c.messages, botMsg],
-                title: c.title === "New Chat"
-                  ? text.slice(0, 25)
-                  : c.title
+                title: c.title === "New Chat" ? text.slice(0, 25) : c.title
               }
             : c
         )

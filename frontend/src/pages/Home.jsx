@@ -20,6 +20,7 @@ export default function Home() {
   const activeMessages = chat.activeChat?.messages || []
 
   const handleSend = () => {
+    if (!input.trim()) return
     chat.send(input)
     setInput("")
   }
@@ -39,17 +40,14 @@ export default function Home() {
           <span>Sahachari</span>
         </div>
 
-        {/* THEME TOGGLE */}
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme === "dark" ? <FiMoon /> : <FiSun />}
         </button>
 
-        {/* NEW CHAT */}
         <button className="new-chat" onClick={chat.newChat}>
           + New Chat
         </button>
 
-        {/* RECENT CHATS */}
         <div className="recent">
           <p>Recent Chats</p>
 
@@ -87,10 +85,8 @@ export default function Home() {
           <FiMenu />
         </button>
 
-        {/* CHAT BOX */}
         <div className="chat-box">
 
-          {/* WELCOME SCREEN */}
           {activeMessages.length === 0 && (
             <div className="welcome">
               <h2>How can I help you today?</h2>
@@ -111,27 +107,21 @@ export default function Home() {
             </div>
           )}
 
-          {/* MESSAGES */}
           {activeMessages.map((msg, i) => (
             <div key={i}>
               <Message msg={msg} />
-
               {msg.role === "assistant" && msg.sources?.length > 0 && (
                 <Sources sources={msg.sources} />
               )}
             </div>
           ))}
 
-          {/* LOADING */}
           {chat.loading && <Typing />}
 
-          {/* SCROLL REF */}
           <div ref={chat.bottomRef}></div>
         </div>
 
-        {/* INPUT AREA */}
         <div className="input-box">
-
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -145,9 +135,8 @@ export default function Home() {
           />
 
           <button className="send-btn" onClick={handleSend}>
-            <FiSend/>
-            </button>
-
+            <FiSend />
+          </button>
         </div>
 
       </div>

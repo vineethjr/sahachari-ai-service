@@ -1,0 +1,823 @@
+================================================================================
+WHAT IS SAHACHARI?
+================================================================================
+SHORT ANSWER: Sahachari is a local grocery delivery and home services platform
+serving communities in Kerala, India, especially villages and rural areas.
+
+Sahachari is a local platform that offers grocery delivery and home services
+to communities in Kerala, India, focusing especially on village and rural areas.
+For groceries, Sahachari delivers fresh vegetables, fruits, dairy products,
+spices, and beverages directly to your doorstep. Beyond groceries, Sahachari
+also provides bookable home services such as dishwashing and other household
+assistance, making it a one-stop platform for everyday household needs.
+Sahachari connects local vendors and service providers with customers, offering
+fast and affordable solutions. The name "Sahachari" means "companion" or
+"fellow traveller" in Malayalam, reflecting the platform's goal of being a
+trusted everyday companion for households in Kerala.
+
+================================================================================
+HOW TO PLACE AN ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: You can place an order through the Sahachari app or by telling
+the AI chatbot what you need and saying "checkout" to confirm.
+
+You can place an order on Sahachari in two ways:
+1. Through the Sahachari mobile app — browse products, add them to your cart,
+   and proceed to checkout.
+2. Through the Sahachari AI chatbot — simply tell the chatbot what you need,
+   e.g. "I want 2 kg onions and 1 litre milk", and it will add items to your
+   cart. Say "checkout" or "place my order" to confirm.
+
+================================================================================
+WHAT PRODUCTS DOES SAHACHARI SELL?
+================================================================================
+SHORT ANSWER: Sahachari sells fresh vegetables, fruits, dairy products, spices,
+beverages, and packaged food staples for everyday household needs.
+
+Sahachari sells a wide range of daily grocery essentials including:
+- Fresh vegetables (onions, tomatoes, potatoes, carrots, etc.)
+- Fresh fruits (apples, bananas, mangoes, etc.)
+- Dairy products (milk, curd, butter, paneer, etc.)
+- Spices and condiments (turmeric, chilli powder, cumin, coriander, etc.)
+- Beverages (tea, coffee, juices, etc.)
+- Packaged foods and staples (rice, dal, flour, etc.)
+
+================================================================================
+HOW DOES DELIVERY WORK ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Sahachari delivers to your pincode in 30 to 45 minutes.
+Self Pickup is also available at no delivery charge.
+
+Sahachari delivers to serviceable pincodes in the delivery zone.
+Estimated delivery time is 30 to 45 minutes after order confirmation.
+Delivery charges vary by location and are calculated based on your pincode
+and selected delivery place at checkout.
+Self Pickup is also available — you can collect your order from the nearest
+Sahachari point at no delivery charge.
+
+================================================================================
+WHAT ARE THE PAYMENT METHODS ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Sahachari currently supports Cash on Delivery and Self Pickup.
+Online payment may be added in future updates.
+
+Sahachari currently supports the following payment methods:
+1. Cash on Delivery (COD) — pay in cash when your order arrives.
+2. Online payment options.
+
+================================================================================
+HOW TO REGISTER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Download the app, tap Register, fill in your details with a
+unique email and a password of at least 6 characters, and enter your pincode.
+
+To create a new customer account on Sahachari:
+1. Download the Sahachari app.
+2. Tap "Register" and enter your name, email address, mobile number, and password.
+3. Your email must be unique and your password must be at least 6 characters long.
+4. Enter your serviceable pincode to confirm your delivery area.
+5. On successful registration, you will receive an authentication token for login.
+
+================================================================================
+HOW TO LOGIN ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Open the app, enter your registered email and password, and
+tap Login. Contact support if you forget your password.
+
+To log into Sahachari:
+1. Open the Sahachari app.
+2. Enter your registered email address and password.
+3. Tap "Login" — you will receive a JWT authentication token to access your account.
+If you forget your password, contact Sahachari support for assistance.
+
+================================================================================
+HOW TO TRACK MY ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Check order status in the Orders screen in the app, or ask the
+chatbot "track my order" for an instant update.
+
+You can track your order status through:
+1. The Sahachari app — go to the Orders screen to see your current order status.
+2. The AI chatbot — say "order status" or "track my order" and the chatbot will
+   fetch your latest order status instantly.
+Order statuses include: Processing, Confirmed, Out for Delivery, Delivered, Cancelled.
+
+================================================================================
+HOW TO CANCEL AN ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Say "cancel my order" to the chatbot or go to Orders in the app
+and tap Cancel. Orders Out for Delivery or Delivered cannot be cancelled.
+
+To cancel an order:
+1. Through the chatbot — say "cancel my order" and the chatbot will attempt to
+   cancel your most recent order.
+2. Through the app — go to Orders, select the order, and tap Cancel.
+Note: Orders that are already Out for Delivery or Delivered cannot be cancelled.
+If you were charged, a refund will be processed within 2 to 3 business days.
+
+================================================================================
+WHAT IS THE SAHACHARI WISHLIST?
+================================================================================
+SHORT ANSWER: The wishlist lets you save items to buy later. Say "add to my
+wishlist" to save, and "order my wishlist" to buy everything at once.
+
+The Sahachari wishlist lets you save items you want to buy later.
+You can add items to your wishlist by telling the chatbot:
+"Add 1 kg apples to my wishlist" or "Save tomatoes to wishlist".
+To view your wishlist, say "show my wishlist".
+To order all wishlist items at once, say "order my wishlist".
+
+================================================================================
+WHAT AREAS DOES SAHACHARI DELIVER TO?
+================================================================================
+SHORT ANSWER: Sahachari delivers only within Kerala, India, focusing on villages
+and rural communities. Enter your pincode at checkout to check availability.
+
+Sahachari operates only in Kerala, India, with a special focus on serving
+village and rural communities across the state. We deliver to serviceable
+pincodes within our active delivery zones in Kerala. During checkout, enter
+your pincode to see available delivery places and charges for your area.
+If your pincode is not yet serviceable, we may not be able to deliver to your
+location currently, but more areas across Kerala are being added regularly.
+Sahachari does not deliver outside Kerala at this time.
+
+================================================================================
+HOW TO CONTACT SAHACHARI SUPPORT?
+================================================================================
+SHORT ANSWER: Contact Sahachari support through the Help section in the app.
+Response time is within 24 hours on business days.
+
+For any issues, complaints, or queries not resolved by the AI chatbot,
+you can contact Sahachari support through the app's Help section.
+Support is available during business hours. Response time is typically
+within 24 hours on business days.
+
+================================================================================
+WHAT IS THE SAHACHARI AI CHATBOT?
+================================================================================
+SHORT ANSWER: The Sahachari AI chatbot is a shopping assistant inside the app
+that helps you add items, manage your cart, place orders, and answer questions.
+
+The Sahachari AI chatbot is an intelligent shopping assistant built into the
+Sahachari app. It helps customers:
+- Search and add grocery items to their cart using natural language
+- View and manage their cart and wishlist
+- Place and track orders
+- Get answers to questions about Sahachari's products and services
+Simply type what you need in plain English or Malayalam phrases and the chatbot
+will understand and assist you.
+
+================================================================================
+WHAT ARE THE DELIVERY TIMINGS ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Sahachari delivers within 30 to 45 minutes after your order
+is confirmed, during standard business hours every day.
+
+Sahachari delivers orders within 30 to 45 minutes after your order is confirmed.
+Delivery is available during standard business hours every day. If there is any
+delay due to weather or high demand, the delivery team will inform you through
+the app. For urgent queries about your delivery time, contact Sahachari support
+through the Help section in the app.
+
+================================================================================
+IS THERE A MINIMUM ORDER VALUE ON SAHACHARI?
+================================================================================
+SHORT ANSWER: No, Sahachari does not have a minimum order value. You can order
+as little or as much as you need.
+
+Sahachari does not currently require a minimum order value to place an order.
+You can order as little or as much as you need. However, delivery charges may
+apply based on your location and order details, which you can see clearly at
+checkout before confirming your order.
+
+================================================================================
+CAN I ORDER FROM SAHACHARI WITHOUT THE APP?
+================================================================================
+SHORT ANSWER: No, Sahachari currently requires the mobile app to place orders.
+Website or phone ordering is not supported at this time.
+
+Currently, Sahachari is best experienced through the Sahachari mobile app,
+where you can browse products, manage your cart, and track your orders easily.
+The AI chatbot is also available within the app to help you shop using simple
+everyday language. Sahachari does not currently support ordering through a
+website or phone call.
+
+================================================================================
+HOW DO I UPDATE MY DELIVERY ADDRESS ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Enter a new pincode and address at checkout, or contact support
+to permanently update your registered address.
+
+You can update your delivery address during checkout by entering your pincode
+and selecting your preferred delivery location. If you need to change your
+registered address permanently, please contact Sahachari support through the
+Help section in the app and the team will assist you.
+
+================================================================================
+WHAT HAPPENS IF AN ITEM I ORDERED IS OUT OF STOCK?
+================================================================================
+SHORT ANSWER: Sahachari will contact you if an item is unavailable. You may
+receive a partial delivery or choose to cancel the order.
+
+If an item you ordered becomes unavailable after your order is placed, the
+Sahachari team will contact you to inform you. You may receive a partial
+delivery for the available items, or you can choose to cancel the order
+if the missing item is essential. For such cases, please contact Sahachari
+support through the Help section in the app.
+
+================================================================================
+CAN I CHANGE MY ORDER AFTER PLACING IT?
+================================================================================
+SHORT ANSWER: Changes after order confirmation are not always possible. Contact
+support immediately — orders Out for Delivery cannot be modified.
+
+Once an order is confirmed, changes may not always be possible. If you need
+to modify your order, contact Sahachari support immediately through the app's
+Help section. If the order has not yet been picked up for delivery, the team
+will try their best to accommodate your request. Orders that are already
+Out for Delivery cannot be modified.
+
+================================================================================
+ARE THE VEGETABLES AND FRUITS ON SAHACHARI FRESH?
+================================================================================
+SHORT ANSWER: Yes, Sahachari delivers fresh vegetables and fruits sourced
+directly from local vendors and farmers in Kerala.
+
+Yes! Sahachari is committed to delivering fresh vegetables and fruits directly
+sourced from local vendors and farmers in Kerala. We prioritise freshness and
+quality in every order. If you ever receive items that do not meet your
+expectations, please contact Sahachari support so we can resolve it for you.
+
+================================================================================
+DOES SAHACHARI OFFER ANY DISCOUNTS OR OFFERS?
+================================================================================
+SHORT ANSWER: Yes, Sahachari occasionally offers discounts and seasonal deals.
+Check the Offers section in the app for the latest promotions.
+
+Sahachari occasionally offers discounts, seasonal deals, and special offers
+to customers. Keep an eye on the app for the latest promotions. For current
+offers and deals, check the Offers section in the Sahachari app or ask the
+chatbot "Are there any offers today?"
+
+================================================================================
+HOW DO I DELETE MY SAHACHARI ACCOUNT?
+================================================================================
+SHORT ANSWER: Contact Sahachari support through the Help section in the app
+to request account deletion. This action is permanent.
+
+If you wish to delete your Sahachari account, please contact Sahachari support
+through the Help section in the app. The support team will guide you through
+the account deletion process. Please note that deleting your account will
+remove all your order history and saved information permanently.
+
+================================================================================
+CAN I REORDER A PREVIOUS ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Yes, go to the Orders screen, select a previous order, and tap
+Reorder to add all available items to your cart automatically.
+
+Yes! You can easily reorder items from a previous order. Go to the Orders
+screen in the Sahachari app, select the order you want to repeat, and tap
+Reorder. All available items from that order will be added to your cart
+automatically. You can then review and confirm before checkout.
+
+================================================================================
+WHAT SHOULD I DO IF MY ORDER IS DELAYED?
+================================================================================
+SHORT ANSWER: Check your order status in the app. If the delay is significant,
+contact Sahachari support through the Help section for an update.
+
+If your order is taking longer than the estimated 30 to 45 minutes, please
+check your order status in the Sahachari app under the Orders screen. If the
+delay is significant, contact Sahachari support through the Help section in
+the app. Our team will check with the delivery partner and update you as
+soon as possible.
+
+================================================================================
+WHAT SHOULD I DO IF I RECEIVE A WRONG ITEM?
+================================================================================
+SHORT ANSWER: Contact Sahachari support immediately through the Help section
+in the app. We will arrange a replacement or refund quickly.
+
+If you receive an incorrect item in your order, please contact Sahachari
+support immediately through the Help section in the app. Provide your order
+details and a description of the wrong item received. Sahachari will arrange
+a replacement or refund as quickly as possible to resolve the issue.
+
+================================================================================
+CAN I SCHEDULE A DELIVERY FOR LATER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: No, scheduled deliveries are not available yet. Sahachari
+delivers within 30 to 45 minutes of order confirmation.
+
+Currently, Sahachari focuses on fast delivery within 30 to 45 minutes of
+order confirmation. Scheduled or future-dated deliveries are not available
+at this time. This feature may be added in future updates. For urgent
+delivery needs, place your order as normal and the team will deliver promptly.
+
+================================================================================
+HOW DO I REPORT A PROBLEM WITH THE SAHACHARI APP?
+================================================================================
+SHORT ANSWER: Contact Sahachari support through the Help section in the app
+describing the issue. The team resolves problems within 24 hours on business days.
+
+If you face any technical issues with the Sahachari app such as crashes,
+login problems, or payment errors, please contact Sahachari support through
+the Help section in the app. Describe the problem clearly and the support
+team will investigate and resolve it within 24 hours on business days.
+
+================================================================================
+IS MY PERSONAL INFORMATION SAFE ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Yes, Sahachari stores your personal information securely and
+never shares it with unauthorized parties.
+
+Yes, Sahachari takes your privacy and data security seriously. Your personal
+information such as your name, mobile number, email address, and delivery
+address is stored securely and is never shared with unauthorized parties.
+Only the information necessary for processing and delivering your orders is
+used. For any privacy concerns, contact Sahachari support through the app.
+
+================================================================================
+CAN I USE SAHACHARI FOR BULK OR WHOLESALE ORDERS?
+================================================================================
+SHORT ANSWER: Sahachari is designed for household grocery needs. Contact support
+for large or bulk order arrangements.
+
+Sahachari is primarily designed for everyday household grocery needs.
+For large or bulk orders, please contact Sahachari support through the
+Help section in the app to discuss availability and arrangements.
+The support team will guide you based on current stock and delivery capacity.
+
+================================================================================
+HOW DO I CHANGE MY PASSWORD ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Go to Account Settings in the app and select Change Password.
+Contact support if you have forgotten your current password.
+
+To change your password on Sahachari, go to your account settings in the
+Sahachari app and select Change Password. Enter your current password and
+then set a new password of at least 6 characters. If you have forgotten your
+current password, contact Sahachari support through the Help section in the
+app for assistance in resetting it.
+
+================================================================================
+DOES SAHACHARI DELIVER ON PUBLIC HOLIDAYS?
+================================================================================
+SHORT ANSWER: Sahachari aims to deliver on most public holidays, but
+availability may vary. Check the app or contact support for confirmation.
+
+Sahachari aims to serve customers every day including most public holidays.
+However, delivery availability on certain holidays may vary depending on
+vendor and delivery partner availability. Check the app for any holiday
+notices or contact Sahachari support for confirmation on specific holidays.
+
+================================================================================
+WHAT LANGUAGES DOES THE SAHACHARI CHATBOT SUPPORT?
+================================================================================
+SHORT ANSWER: The chatbot supports English and understands common Malayalam
+words and phrases used in everyday grocery shopping.
+
+The Sahachari AI chatbot primarily supports English and understands common
+Malayalam phrases used in everyday shopping. You can type your grocery needs
+in simple English or familiar Malayalam terms and the chatbot will understand
+and assist you. Full Malayalam language support may be expanded in future
+updates of the app.
+
+================================================================================
+HOW DO I KNOW IF SAHACHARI DELIVERS TO MY PINCODE?
+================================================================================
+SHORT ANSWER: Enter your pincode during registration or checkout in the app.
+If it is serviceable, delivery options will appear.
+
+To check if Sahachari delivers to your area, open the Sahachari app and
+enter your pincode during registration or checkout. If your pincode is
+within our active delivery zone in Kerala, you will see available delivery
+options and charges. If your pincode is not yet serviceable, the app will
+notify you and you can contact support to request coverage in your area.
+
+================================================================================
+CAN I TRACK MY DELIVERY IN REAL TIME ON SAHACHARI?
+================================================================================
+SHORT ANSWER: You can check live order status through the Orders screen or
+by asking the chatbot "track my order". Live map tracking may come in future.
+
+Currently, you can check your order status through the Orders screen in the
+Sahachari app or by asking the chatbot "track my order". The status updates
+include Processing, Confirmed, Out for Delivery, Delivered, and Cancelled.
+Real-time live map tracking may be introduced in future updates of the app.
+For urgent delivery updates, contact Sahachari support through the Help section.
+
+================================================================================
+WHAT HAPPENS IF NOBODY IS HOME DURING DELIVERY?
+================================================================================
+SHORT ANSWER: The delivery partner will call your registered number. If
+unreachable, the order may be returned. Ensure someone is available at home.
+
+If you are not available at home during delivery, the Sahachari delivery
+partner will attempt to contact you on your registered mobile number.
+If you cannot be reached, the order may be returned. Please ensure someone
+is available at your delivery address or contact Sahachari support in advance
+to make alternate arrangements for your order.
+
+================================================================================
+CAN I ADD ITEMS TO MY ORDER AFTER PLACING IT?
+================================================================================
+SHORT ANSWER: No, items cannot be added to a confirmed order. Place a new
+separate order for any additional items you need.
+
+Once an order is confirmed, adding new items to it is not possible. You will
+need to place a new separate order for any additional items you need. The
+chatbot makes it quick and easy — simply tell it what else you need and say
+checkout to place the new order right away.
+
+================================================================================
+DOES SAHACHARI SELL ORGANIC PRODUCTS?
+================================================================================
+SHORT ANSWER: Availability of organic products depends on local vendors.
+Check the app or contact support for specific organic product requests.
+
+Sahachari works with local vendors and farmers in Kerala to source fresh
+produce. Availability of organic products depends on what local vendors
+currently supply. Check the products section in the Sahachari app to see
+what is available in your area. For specific organic product requests,
+contact Sahachari support through the Help section in the app.
+
+================================================================================
+HOW DO I GIVE FEEDBACK ABOUT MY ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: After delivery, go to the Orders screen in the app, select the
+delivered order, and leave your rating and comments.
+
+After your order is delivered, you can share your feedback through the
+Sahachari app. Go to the Orders screen, select the delivered order, and
+leave your rating and comments. Your feedback helps Sahachari improve
+the quality of products and services for all customers in Kerala.
+
+================================================================================
+WHAT IS THE SELF PICKUP OPTION ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Self Pickup lets you collect your order from the nearest
+Sahachari point for free with no delivery charge applied.
+
+Self Pickup allows you to collect your order directly from the nearest
+Sahachari pickup point instead of getting it delivered to your home.
+This option has no delivery charge applied. To use Self Pickup, select it
+as your delivery method during checkout and you will be informed of the
+nearest pickup location based on your pincode.
+
+================================================================================
+CAN I HAVE MY ORDER DELIVERED TO A DIFFERENT ADDRESS?
+================================================================================
+SHORT ANSWER: Yes, enter a different pincode and address at checkout to
+deliver to any serviceable location in Kerala.
+
+Yes, during checkout you can enter a different delivery address from your
+registered address. Simply enter the pincode of the delivery location and
+select the address where you want the order delivered. Please ensure the
+delivery pincode is within Sahachari's serviceable zones in Kerala.
+
+================================================================================
+WHAT SHOULD I DO IF THE SAHACHARI APP IS NOT WORKING?
+================================================================================
+SHORT ANSWER: Close and reopen the app, check your internet, update the app,
+or restart your phone. Contact support if the problem continues.
+
+If the Sahachari app is not opening or functioning correctly, try the
+following steps:
+1. Close the app completely and reopen it.
+2. Check your internet connection.
+3. Update the app to the latest version from the app store.
+4. Restart your phone and try again.
+If the problem continues, contact Sahachari support through the Help section
+or reach out during business hours for technical assistance.
+
+================================================================================
+CAN I ORDER MULTIPLE ITEMS AT ONCE ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Yes, tell the chatbot all your items in one message and it will
+add everything to your cart at once.
+
+Yes! You can add as many items as you need in a single order on Sahachari.
+Simply tell the chatbot everything you need in one message, for example:
+"I want 2 kg onions, 1 litre milk, and 500 g tomatoes." The chatbot will
+add all items to your cart at once. You can also browse and add items
+through the app before proceeding to checkout.
+
+================================================================================
+HOW FRESH ARE THE DAIRY PRODUCTS ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Dairy products are sourced fresh from local suppliers in Kerala
+and delivered directly to your door. Contact support for quality issues.
+
+Dairy products on Sahachari such as milk, curd, butter, and paneer are
+sourced from local suppliers in Kerala and delivered fresh to your doorstep.
+We prioritise quality and freshness in every order. Always check the
+expiry date on packaged dairy items when you receive them. If you receive
+a product that does not meet quality standards, contact Sahachari support
+immediately for a replacement or refund.
+
+================================================================================
+CAN I CANCEL ONLY PART OF MY ORDER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Partial cancellations are not supported. Contact support
+immediately after placing your order if you need to remove specific items.
+
+Currently, Sahachari processes orders as a whole. Partial cancellations
+of individual items within an order are not supported at this time.
+If you need to cancel specific items, contact Sahachari support through
+the Help section in the app as soon as possible after placing your order,
+and the team will try their best to assist you before the order is dispatched.
+
+================================================================================
+HOW DO I UPDATE MY MOBILE NUMBER ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Contact Sahachari support through the Help section in the app
+to update your mobile number. Identity verification is required for security.
+
+To update your registered mobile number on Sahachari, contact Sahachari
+support through the Help section in the app. For security reasons, mobile
+number changes cannot be done directly through the app and require
+verification by the support team. Have your registered email address ready
+when contacting support to confirm your identity.
+
+================================================================================
+DOES SAHACHARI CHARGE FOR PACKAGING?
+================================================================================
+SHORT ANSWER: No, Sahachari does not charge separately for packaging.
+Delivery charges are shown clearly at checkout.
+
+Sahachari does not charge separately for standard product packaging.
+The prices shown in the app include the cost of the products as supplied
+by local vendors. Delivery charges are calculated separately based on your
+pincode and are shown clearly at checkout before you confirm your order.
+
+================================================================================
+WHAT IF I ENTERED THE WRONG DELIVERY ADDRESS?
+================================================================================
+SHORT ANSWER: Contact support immediately. If the order is not yet dispatched,
+the team will try to update your address. Changes after dispatch are not possible.
+
+If you realise you entered the wrong delivery address after placing your
+order, contact Sahachari support immediately through the Help section in
+the app. If the order has not yet been dispatched, the team will try to
+update your delivery address. Once an order is Out for Delivery, the
+address cannot be changed for that order.
+
+================================================================================
+CAN SENIOR CITIZENS OR ELDERLY PEOPLE USE SAHACHARI EASILY?
+================================================================================
+SHORT ANSWER: Yes, Sahachari is designed to be simple for everyone. Just type
+what you need in everyday language and the chatbot will handle the rest.
+
+Yes! Sahachari is designed to be simple and easy for everyone, including
+senior citizens. You can shop just by typing what you need in simple everyday
+language through the chatbot, for example: "I need 1 kg rice and 2 litres milk."
+No technical knowledge is required. If you need help getting started, ask
+a family member to help set up the app or contact Sahachari support for
+a guided walkthrough.
+
+================================================================================
+DOES SAHACHARI SUPPORT MALAYALAM LANGUAGE?
+================================================================================
+SHORT ANSWER: The chatbot understands common Malayalam words and grocery terms.
+Full Malayalam interface support is planned for future app updates.
+
+The Sahachari chatbot understands common Malayalam words and phrases used
+in everyday grocery shopping. You can mix Malayalam product names with
+English when chatting, for example: "1 kg payar and 2 litres paal."
+Full Malayalam language interface support is planned for future updates
+of the Sahachari app to better serve our customers across Kerala.
+
+================================================================================
+HOW MANY ITEMS CAN I ADD TO MY WISHLIST ON SAHACHARI?
+================================================================================
+SHORT ANSWER: There is no strict limit on wishlist items. Add as many as
+you like and order them all at once by saying "order my wishlist."
+
+There is no strict limit on the number of items you can save to your
+Sahachari wishlist. You can keep adding items anytime by telling the chatbot
+"add 1 kg apples to my wishlist" or "save tomatoes to wishlist." To view
+all saved items, say "show my wishlist." To order everything in your wishlist
+at once, simply say "order my wishlist."
+
+================================================================================
+WHAT SHOULD I DO IF MY PAYMENT WAS DEDUCTED BUT ORDER WAS NOT PLACED?
+================================================================================
+SHORT ANSWER: Contact Sahachari support immediately through the Help section
+with your payment details. A refund will be processed within 2 to 3 business days.
+
+If your payment was deducted but your order does not appear in the Orders
+screen, please contact Sahachari support immediately through the Help section
+in the app. Share your payment details and the amount deducted. The support
+team will investigate and either confirm your order or process a full refund
+within 2 to 3 business days.
+
+================================================================================
+WHAT IS THE REFUND POLICY ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Refunds are processed within 2 to 3 business days for cancelled
+orders or payment issues. Contact support to initiate a refund.
+
+If you cancel an order for which you were charged, or if a payment was
+deducted without an order being placed, Sahachari will process a refund
+within 2 to 3 business days. To initiate a refund, contact Sahachari support
+through the Help section in the app with your order and payment details.
+Sahachari aims to resolve all refund requests as quickly as possible.
+
+================================================================================
+CAN I USE SAHACHARI IF I DO NOT HAVE A SMARTPHONE?
+================================================================================
+SHORT ANSWER: Sahachari currently requires a smartphone with the mobile app.
+Ordering via calls, SMS, or a desktop website is not available at this time.
+
+Sahachari is currently available only through its mobile app on smartphones.
+If you do not have a smartphone, you may ask a family member or trusted person
+to help you place orders through their device using your account. Sahachari
+does not currently support ordering via phone calls, SMS, or a desktop website.
+Support for more platforms may be added in future.
+
+================================================================================
+HOW DO I REMOVE AN ITEM FROM MY CART ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Tell the chatbot "remove [item name] from cart" or open your
+cart in the app and tap the remove button next to the item.
+
+To remove an item from your cart on Sahachari, you can:
+1. Tell the chatbot — say "remove onions from cart" or "delete milk from cart"
+   and the chatbot will remove the item immediately.
+2. Through the app — open your cart, find the item you want to remove,
+   and tap the delete or remove button next to it.
+After removal, your updated cart will be shown automatically.
+
+================================================================================
+WHAT HAPPENS TO MY CART IF I CLOSE THE SAHACHARI APP?
+================================================================================
+SHORT ANSWER: Your cart is saved automatically. Items remain in your cart
+when you reopen the app so you can continue shopping anytime.
+
+Your Sahachari cart is saved automatically as you add items. If you close
+the app or log out, your cart items will still be there when you log back in.
+You do not need to worry about losing your cart. Simply reopen the app and
+continue from where you left off or proceed to checkout at any time.
+
+================================================================================
+IS THE SAHACHARI APP FREE TO DOWNLOAD?
+================================================================================
+SHORT ANSWER: Yes, the Sahachari app is free to download. You only pay for
+groceries and applicable delivery charges when you place an order.
+
+The Sahachari app is completely free to download and install on your
+smartphone. There are no subscription fees or charges for using the app
+or the AI chatbot. You only pay for the groceries you order and any
+applicable delivery charges based on your pincode, which are shown clearly
+at checkout before you confirm your order.
+
+================================================================================
+CAN I VIEW MY ORDER HISTORY ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Yes, go to the Orders screen in the Sahachari app to view all
+your past orders with their details and statuses.
+
+Yes, you can view your complete order history on Sahachari. Simply go to
+the Orders screen in the app to see all your past and current orders,
+including the items ordered, order status, and delivery details. You can
+also reorder from any previous order directly from the Orders screen
+by tapping the Reorder button.
+
+================================================================================
+WHAT IF I FORGOT MY REGISTERED EMAIL ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Contact Sahachari support through the Help section with your
+name and mobile number to recover your registered email address.
+
+If you have forgotten the email address you used to register on Sahachari,
+contact Sahachari support through the Help section in the app. Provide your
+registered name and mobile number so the support team can verify your identity
+and help you recover or update your account email. The team is available
+during business hours and will respond within 24 hours on business days.
+
+================================================================================
+DOES SAHACHARI DELIVER DURING RAIN OR BAD WEATHER?
+================================================================================
+SHORT ANSWER: Sahachari tries to deliver in all weather but severe weather in
+Kerala may cause delays. You will be informed through the app if affected.
+
+Sahachari's delivery team makes every effort to fulfil orders even during
+light rain or cloudy weather, which is common in Kerala. However, during
+severe weather conditions such as heavy rain, flooding, or storms, deliveries
+may be delayed or temporarily paused for the safety of delivery partners.
+If your delivery is affected by weather, you will be notified through the app.
+Contact support through the Help section for urgent assistance.
+
+================================================================================
+CAN I GIFT GROCERIES TO SOMEONE ELSE USING SAHACHARI?
+================================================================================
+SHORT ANSWER: Yes, enter the recipient's address at checkout to send groceries
+to a friend or family member at any serviceable pincode in Kerala.
+
+Yes! You can send groceries to a friend or family member as a gift using
+Sahachari. During checkout, simply enter the recipient's delivery address
+and pincode instead of your own. Make sure the delivery address is within
+Sahachari's serviceable pincodes in Kerala. Pay using Cash on Delivery
+and inform the recipient to keep cash ready, or choose Self Pickup if
+you want to collect and deliver it yourself.
+
+================================================================================
+HOW DO I KNOW WHEN MY ORDER IS OUT FOR DELIVERY?
+================================================================================
+SHORT ANSWER: Your order status updates to "Out for Delivery" in the Orders
+screen. Ask the chatbot "track my order" anytime for the latest status.
+
+When your order is on its way, the status in the Orders screen of the
+Sahachari app will update to "Out for Delivery." You can check this anytime
+by opening the app and going to the Orders screen, or by asking the chatbot
+"track my order" or "order status." The delivery partner will also contact
+you on your registered mobile number if needed.
+
+================================================================================
+HOW DO I REFER A FRIEND TO SAHACHARI?
+================================================================================
+SHORT ANSWER: Share the Sahachari app with friends and ask them to register.
+Check the app for any active referral offers or rewards.
+
+Sahachari loves growing its community of happy shoppers across Kerala.
+To refer a friend, share the Sahachari app with them and ask them to
+register. Check the app for current referral offers and rewards.
+For more details on any referral program, contact Sahachari support
+through the Help section in the app.
+
+================================================================================
+DOES SAHACHARI HAVE A LOYALTY OR REWARDS PROGRAM?
+================================================================================
+SHORT ANSWER: A loyalty program is not confirmed at this time. Check the app
+regularly for any new offers or reward programs introduced by Sahachari.
+
+Sahachari is focused on providing affordable and fast grocery delivery to
+communities in Kerala. Information about a loyalty or rewards program is
+not available at this time. Keep checking the app for any new programs or
+offers that may be introduced. For the latest updates, contact Sahachari
+support through the Help section in the app.
+
+================================================================================
+HOW DO I FIND THE PRICE OF A PRODUCT ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Browse the products section in the Sahachari app to see current
+prices. Prices are shown clearly before you add items to your cart.
+
+You can find the price of any product by browsing the products section in
+the Sahachari app. Each product listing shows the current price clearly
+before you add it to your cart. Prices may vary based on availability and
+local vendor rates. For any pricing queries, contact Sahachari support
+through the Help section in the app.
+
+================================================================================
+WHAT SHOULD I DO IF THE DELIVERY PARTNER BEHAVES RUDELY?
+================================================================================
+SHORT ANSWER: Report the incident to Sahachari support immediately through
+the Help section in the app. We take all complaints seriously.
+
+Sahachari expects all delivery partners to treat customers with respect and
+professionalism. If a delivery partner behaves rudely or inappropriately,
+please report the incident immediately through the Help section in the
+Sahachari app. Provide details of the order and the incident. Sahachari
+takes all complaints seriously and will investigate and take appropriate
+action to ensure a safe and respectful experience for all customers.
+
+================================================================================
+CAN I USE MULTIPLE ACCOUNTS ON SAHACHARI?
+================================================================================
+SHORT ANSWER: Each customer should use one account with a unique email address.
+Multiple accounts for the same person are not recommended.
+
+Each Sahachari account requires a unique email address. While the app does
+not technically prevent having more than one account, using multiple accounts
+is not recommended as it can cause confusion with orders and delivery history.
+If you are having trouble with your existing account, contact Sahachari support
+through the Help section in the app for assistance.
+
+================================================================================
+WHAT TYPES OF HOME SERVICES DOES SAHACHARI OFFER?
+================================================================================
+SHORT ANSWER: Sahachari offers bookable home services such as dishwashing and
+other household assistance. More services may be available in your area.
+
+Beyond groceries, Sahachari provides bookable home services to make everyday
+household life easier. Services available include dishwashing and other
+household assistance tasks. The availability of specific home services may
+vary based on your location within Kerala. To book a home service or find
+out what is available near you, check the services section in the Sahachari
+app or contact support through the Help section.
+
+================================================================================
+HOW DOES SAHACHARI SUPPORT LOCAL FARMERS AND VENDORS IN KERALA?
+================================================================================
+SHORT ANSWER: Sahachari connects local Kerala farmers and vendors directly
+with customers, helping them reach more buyers and earn a fair income.
+
+Sahachari is built on the belief of supporting local communities in Kerala.
+By partnering with local farmers, vendors, and service providers, Sahachari
+helps them reach more customers without needing a shop or market stall.
+This means fresher products for customers and better income opportunities
+for local sellers. Shopping on Sahachari is a way to support the local
+economy of Kerala while getting fresh groceries delivered to your door.

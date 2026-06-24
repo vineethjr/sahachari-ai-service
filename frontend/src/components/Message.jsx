@@ -7,7 +7,23 @@ export default function Message({ msg }) {
       <ReactMarkdown>{msg.content}</ReactMarkdown>
 
       {msg.role === "assistant" && (
-        <CopyButton text={msg.content} />
+        <>
+          {msg.source && (
+            <div
+              style={{
+                marginTop: "10px",
+                fontSize: "12px",
+                opacity: 0.8,
+                borderTop: "1px solid #444",
+                paddingTop: "8px"
+              }}
+            >
+              📄 Source: {msg.source}
+            </div>
+          )}
+
+          <CopyButton text={msg.content} />
+        </>
       )}
     </div>
   )
