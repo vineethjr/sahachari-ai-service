@@ -80,7 +80,7 @@ def get_answer(query):
     # Top 3 chunks
     top_chunks = [
     doc
-    for doc, meta, score in ranked_results[:3]
+    for doc, meta, score in ranked_results[:1]
 ]
 
     best_chunk = ranked_results[0][0]
@@ -90,16 +90,17 @@ def get_answer(query):
     prompt = f"""
 You are Sahachari AI Assistant.
 
-Answer ONLY from the provided context.
+Answer ONLY using the provided context.
 
 Rules:
 - Do not use outside knowledge.
-- Do not guess.
-- If answer not found, say:
+- Do not invent information.
+- If the answer is not present, say:
   "I could not find that information in the documentation."
-- Keep answers concise.
-- Mention endpoints if present.
-- Mention required fields if present.
+- Give complete answers.
+- Include endpoints, required fields, and example JSON if available.
+- Do not stop in the middle of a sentence.
+- Format lists properly.
 
 Context:
 {context}
@@ -112,7 +113,7 @@ Answer:
 
     response = generator(
         prompt,
-        max_new_tokens=60,
+        max_new_tokens=200,
         do_sample=False,
         return_full_text=False
     )
