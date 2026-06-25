@@ -1,3 +1,87 @@
+# Sahachari — General Information & FAQ
+# Add this file to your ChromaDB ingest pipeline
+
+## What is Sahachari?
+🌿 Sahachari (സഹചാരി) is your trusted everyday grocery and delivery companion for households in Kerala. We connect you directly with local vendors and home producers for fresh, quality products at fair prices.
+
+## What products does Sahachari sell?
+Sahachari offers a wide range of products including:
+- Fresh vegetables and fruits sourced from local farms
+- Leafy greens — spinach, methi, coriander, palak, curry leaves, amaranth
+- Dairy products — milk, curd, paneer, butter, ghee
+- Grains and rice — various varieties of Kerala rice, wheat flour
+- Oils and spices — coconut oil, mustard oil, pepper, cardamom, turmeric
+- Groceries and daily essentials — dal, sugar, salt, tea, coffee
+- Snacks and ready-to-eat items
+- Beverages — fresh juices, buttermilk, tender coconut water
+- Homemade food — curries, pickles, snacks from local home kitchens
+- Fast food items
+- Services — dishwashing, cleaning, sweeping, mopping
+- Rental items for household use
+
+## Do you have organic or locally sourced items?
+Yes! Sahachari works closely with local farmers and home producers across Kerala. Many of our vegetables, fruits, and homemade food items are locally sourced and grown using traditional farming methods. Look for items described as "local", "organic", or "home-grown" in the product catalogue. Supporting local means fresher food and stronger communities!
+
+## Can you suggest groceries for a small household of 2?
+For a small household of 2 people, here's a practical weekly starter list:
+- Fresh vegetables: 1 kg onions, 1 kg tomatoes, 500g potatoes, 250g carrots
+- Leafy greens: 500g spinach or palak (fresh, lasts 2–3 days)
+- Aromatics: 100g garlic, 50g ginger
+- Cooking essentials: 1 litre coconut oil, basic spice pack
+- Grains: 2–3 kg rice, 500g wheat flour (atta)
+- Protein: 500g dal or lentils
+- Dairy: 1 litre milk or 400g curd (can be ordered daily)
+You can add items to cart by saying "add 1 kg onions" or browse by saying "show me vegetables".
+
+## What services does Sahachari provide apart from groceries?
+Apart from groceries and food, Sahachari offers home services:
+- Dishwashing / dish wash service — professional kitchen vessel cleaning
+- Sweeping service — floor sweeping for homes
+- Mopping service — wet mopping and floor cleaning
+- General house cleaning service
+These can be booked through the chat by saying "book dishwashing" or "show me services" to see available options with pricing.
+
+## How do I place an order on Sahachari?
+Ordering is simple — just tell the assistant what you want in natural language:
+- Say "I want 2 kg onions" to add to your cart
+- Say "Add 500g spinach and 1 kg tomatoes"
+- Say "Show me fruits" to browse available fruits
+- Say "What's in my cart?" to review your cart
+- Say "Checkout" or "Place my order" to complete the purchase
+- Say "Track my order" to check delivery status
+
+## What are Sahachari's delivery timings?
+Delivery timings depend on your location and the vendor. Same-day delivery is available for orders placed before the cut-off time, which varies by vendor. Next-day delivery is also available. Check the app or ask "what are the delivery timings in my area" for accurate information.
+
+## What are the delivery charges?
+Delivery charges depend on your order size and location. Many vendors offer free delivery above a minimum order value. Exact delivery charges are shown at checkout. Ask "what are the delivery charges" for more details.
+
+## What payment methods does Sahachari accept?
+Sahachari supports multiple payment methods including online payment (UPI, cards, net banking) and cash on delivery in select areas. Payment options are shown at checkout.
+
+## What is the minimum order value?
+Minimum order values vary by vendor. Some vendors on Sahachari have no minimum order, while others may require a minimum. This information is shown when you proceed to checkout.
+
+## Can I cancel my order?
+Yes, you can cancel your order if it hasn't been picked up yet. Say "cancel my order" in the chat and I'll attempt to cancel it for you. For orders already out for delivery, please contact support.
+
+## How does Sahachari support the local community?
+Sahachari (the Malayalam word for "companion") is built to support local farmers, home producers, and small vendors by connecting them directly with households. Every purchase helps sustain local livelihoods and keeps food supply chains short and fresh. Shopping with Sahachari means fresher food and a stronger Kerala community.
+
+## What areas does Sahachari serve?
+Sahachari currently serves select areas in Kerala. Coverage is growing. Share your pincode and we'll confirm if delivery is available in your area.
+
+## How do I track my order?
+Say "track my order" or "order status" in the chat and I'll show you the latest status of your most recent order, including whether it's placed, accepted, out for delivery, or delivered.
+
+## I forgot what I ordered — can you show me my past orders?
+Yes! Say "show my orders" or "order history" and I'll list all your past orders with their status and items.
+
+## How do I add items to my wishlist?
+Say "add 1 kg apples to my wishlist" or "save spinach for later". Items in your wishlist can be moved to the cart later by saying "order my wishlist".
+
+## What are the freshness guarantees?
+Sahachari sources directly from local vendors and farmers, which means shorter supply chains and fresher products than supermarkets. Leafy vegetables are typically harvested the same day. If you receive anything that is not fresh, please report it through the app for a refund or replacement.
 ================================================================================
 WHAT IS SAHACHARI?
 ================================================================================
@@ -821,3 +905,722 @@ helps them reach more customers without needing a shop or market stall.
 This means fresher products for customers and better income opportunities
 for local sellers. Shopping on Sahachari is a way to support the local
 economy of Kerala while getting fresh groceries delivered to your door.
+
+================================================================================
+RECOMMEND VEGETABLES FOR MAKING SAMBAR?
+================================================================================
+SHORT ANSWER: Toor dal, drumstick, brinjal, pumpkin, ladies finger, carrot,
+shallots, and tomato are commonly used for sambar.
+
+For a classic sambar, you'll need toor dal (split pigeon peas) as the base,
+along with vegetables like drumstick, brinjal, pumpkin, ladies finger (okra),
+carrot, shallots, and tomato. Tamarind is also used for the characteristic
+tangy flavour. You can tell the Sahachari chatbot all your items in one
+message, for example: "I want toor dal, drumstick, brinjal, and tomato" and
+it will add everything to your cart at once.
+
+================================================================================
+WHAT FRUITS ARE GOOD FOR CHILDREN?
+================================================================================
+SHORT ANSWER: Bananas, apples, and mangoes are easy-to-digest, nutritious
+fruits that are popular choices for children.
+
+Bananas are gentle on digestion and provide quick energy, apples offer fibre
+and vitamin C, and mangoes are rich in vitamin A and well-loved by kids for
+their sweetness. All three are available among Sahachari's regular fruit
+offerings and can be ordered fresh through the app or chatbot.
+
+================================================================================
+SUGGEST INGREDIENTS FOR A FRUIT SALAD?
+================================================================================
+SHORT ANSWER: A mix of apples, bananas, and mangoes makes a simple, tasty
+fruit salad with good variety in texture and sweetness.
+
+For a quick fruit salad, combine apples, bananas, and mangoes for a good mix
+of texture and sweetness. You can ask the chatbot for "1 apple, 2 bananas,
+and 1 mango" and add a squeeze of lemon or a drizzle of honey at home for
+extra flavour.
+
+================================================================================
+RECOMMEND VEGETABLES FOR A HEALTHY DIET?
+================================================================================
+SHORT ANSWER: Carrots, tomatoes, and onions are good everyday vegetables to
+include for a balanced, healthy diet.
+
+Carrots are a good source of vitamin A, tomatoes provide vitamin C and
+antioxidants, and onions form a nutritious base for many meals. Rotating
+these staples through your weekly orders is an easy way to keep your diet
+balanced, and all three are available fresh through Sahachari.
+
+================================================================================
+I WANT VEGETABLES FOR MAKING BIRYANI?
+================================================================================
+SHORT ANSWER: Onions, tomatoes, carrots, and potatoes are key vegetables for
+a flavourful vegetable biryani.
+
+Onions and tomatoes form the base masala for biryani, while carrots and
+potatoes work well in vegetable biryani specifically. You may also want
+whole spices like cumin and coriander from Sahachari's spice section, along
+with fresh ginger and garlic if available in your area.
+
+================================================================================
+SUGGEST FRUITS RICH IN VITAMIN C?
+================================================================================
+SHORT ANSWER: Among Sahachari's fruit options, mangoes and apples both
+contribute vitamin C to your diet.
+
+Mangoes and apples both offer vitamin C along with other nutrients. Citrus
+fruits like oranges and lemons are typically richer sources of vitamin C, so
+it's worth checking the app to see if these are available in your area, since
+exact stock can vary by location.
+
+================================================================================
+WHAT SHOULD I BUY FOR A WEEKLY FAMILY GROCERY?
+================================================================================
+SHORT ANSWER: A good weekly order includes onions, tomatoes, potatoes, milk,
+curd, rice, dal, and a few basic spices.
+
+For a solid weekly family grocery order, consider staple vegetables like
+onions, tomatoes, and potatoes, dairy items like milk and curd, packaged
+staples like rice and dal, and spices such as turmeric and chilli powder if
+you're running low. You can tell the chatbot everything you need in one
+message and it will add it all to your cart at once.
+
+================================================================================
+RECOMMEND ITEMS FOR A VEGETARIAN DINNER?
+================================================================================
+SHORT ANSWER: Paneer, mixed vegetables like potatoes and carrots, dal, rice,
+and curd make for a filling vegetarian dinner.
+
+Paneer is a good protein source, while mixed vegetables like potatoes and
+carrots paired with dal and rice make a complete, filling vegetarian dinner.
+Curd on the side adds a light, refreshing touch to the meal.
+
+================================================================================
+WHAT VEGETABLES GO WELL IN AVIAL?
+================================================================================
+SHORT ANSWER: Drumstick, carrot, potato, and pumpkin are traditionally used
+in avial, cooked with coconut and curd.
+
+Traditional avial uses a mix of vegetables such as drumstick, carrot, potato,
+and pumpkin, cooked together with coconut and curd for the classic Kerala
+flavour. Check the vegetables section in the app since exact availability
+depends on local vendors on a given day.
+
+================================================================================
+SUGGEST LOW-COST VEGETABLES FOR A HOSTEL STUDENT?
+================================================================================
+SHORT ANSWER: Onions, potatoes, and tomatoes are affordable, versatile
+vegetables that are good for a hostel student's budget.
+
+Onions, potatoes, and tomatoes tend to be the most affordable and versatile
+vegetables, since they form the base of most simple dishes and last a while
+without spoiling quickly. These make a practical, budget-friendly base for
+a hostel student's grocery order on Sahachari.
+
+================================================================================
+WHAT VEGETABLES ARE BEST FOR A QUICK STIR FRY?
+================================================================================
+SHORT ANSWER: Carrots, beans, cabbage, and capsicum work well for a quick,
+colourful stir fry.
+
+For a fast stir fry, vegetables that cook quickly and hold some crunch work
+best, such as carrots, beans, cabbage, and capsicum. Cut them into thin,
+even pieces for faster cooking. Check the vegetables section in the app for
+current availability in your area.
+
+================================================================================
+SUGGEST FRUITS FOR WEIGHT LOSS?
+================================================================================
+SHORT ANSWER: Apples and bananas in moderation can fit into a weight-conscious
+diet as part of a balanced meal plan.
+
+Apples are low in calories and high in fibre, which can help with satiety,
+while bananas offer natural energy and nutrients in a reasonable portion.
+For personalised dietary advice, it's best to consult a nutritionist, but
+these are commonly recommended everyday fruit choices.
+
+================================================================================
+WHAT INGREDIENTS DO I NEED FOR CURD RICE?
+================================================================================
+SHORT ANSWER: You'll need rice, curd, and optionally curry leaves, ginger,
+and green chilli for tempering.
+
+Curd rice needs just two essentials: cooked rice and curd, both available
+through Sahachari. For added flavour, a simple tempering with curry leaves,
+ginger, and green chilli (if you have mustard seeds and oil at home) makes
+it more flavourful.
+
+================================================================================
+RECOMMEND VEGETABLES FOR MAKING SOUP?
+================================================================================
+SHORT ANSWER: Carrots, tomatoes, pumpkin, and onions make a good base for
+a nutritious vegetable soup.
+
+Carrots, tomatoes, pumpkin, and onions blend well together for a warm,
+nutritious soup base. You can add other vegetables you have on hand for
+variety, and these staples are all available fresh through Sahachari.
+
+================================================================================
+WHAT FRUITS ARE GOOD DURING PREGNANCY?
+================================================================================
+SHORT ANSWER: Bananas, apples, and mangoes are commonly recommended fruits,
+but please consult a doctor for personalised dietary advice.
+
+Bananas, apples, and mangoes are nutritious fruit choices often included in
+a balanced diet. However, dietary needs during pregnancy vary by individual,
+so it's best to consult your doctor or a nutritionist for guidance specific
+to your health.
+
+================================================================================
+SUGGEST ITEMS FOR MAKING TEA OR COFFEE AT HOME?
+================================================================================
+SHORT ANSWER: Milk, tea or coffee powder, and sugar are the basic essentials
+for making tea or coffee at home.
+
+For your daily tea or coffee, you'll need milk and your preferred tea or
+coffee from Sahachari's beverages section. Sugar and any flavourings like
+ginger or cardamom (if available) can be added based on personal taste.
+
+================================================================================
+WHAT VEGETABLES ARE GOOD FOR BABIES STARTING SOLID FOOD?
+================================================================================
+SHORT ANSWER: Carrots, pumpkin, and potatoes are commonly used for soft,
+easy-to-digest baby food, but please consult a paediatrician first.
+
+Carrots, pumpkin, and potatoes are often used in soft, mashed baby food
+recipes due to their mild taste and easy digestibility. Always consult a
+paediatrician before introducing new foods to ensure they suit your baby's
+specific needs and age.
+
+================================================================================
+RECOMMEND INGREDIENTS FOR MAKING CHUTNEY?
+================================================================================
+SHORT ANSWER: Tomatoes, onions, and coconut along with spices like chilli
+and coriander are common chutney ingredients.
+
+Tomato or onion chutney can be made using fresh tomatoes or onions, along
+with coriander and chilli powder from Sahachari's spice section. Coconut
+chutney, a Kerala favourite, would need fresh coconut if available locally.
+
+================================================================================
+WHAT ARE GOOD ITEMS FOR A LIGHT BREAKFAST?
+================================================================================
+SHORT ANSWER: Milk, bananas, and bread along with tea or coffee make for
+a simple, light breakfast.
+
+A light breakfast could include milk and a banana, paired with bread or
+your preferred packaged staple, along with tea or coffee. These everyday
+items are all available through Sahachari's grocery and dairy sections.
+
+================================================================================
+SUGGEST VEGETABLES FOR MAKING PICKLE?
+================================================================================
+SHORT ANSWER: Carrots, raw mango (if in season), and lemon are commonly used
+for homemade pickles.
+
+Carrots and raw mango are popular choices for homemade pickles, along with
+lemon for a tangy variation. Availability of raw mango may depend on the
+season and local vendor stock, so check the app for current options.
+
+================================================================================
+WHAT VEGETABLES ARE USED IN KERALA-STYLE THORAN?
+================================================================================
+SHORT ANSWER: Cabbage, beans, and carrots are commonly used for thoran,
+along with grated coconut.
+
+Thoran, a traditional Kerala stir-fry, typically uses finely chopped
+vegetables like cabbage, beans, or carrots mixed with grated coconut and a
+simple mustard-curry leaf tempering. Check the vegetables section in the
+app for what's currently in stock.
+
+================================================================================
+RECOMMEND FRUITS FOR A SUMMER REFRESHMENT OR JUICE?
+================================================================================
+SHORT ANSWER: Mangoes and bananas make refreshing, naturally sweet juices
+or smoothies, especially in warm weather.
+
+Mangoes are especially popular for juices and smoothies during the summer
+season in Kerala, while bananas add a creamy texture when blended. Both are
+available fresh through Sahachari's fruit section.
+
+================================================================================
+WHAT INGREDIENTS DO I NEED FOR A SIMPLE DAL?
+================================================================================
+SHORT ANSWER: Dal, onions, tomatoes, and basic spices like turmeric and
+chilli powder are needed for a simple dal.
+
+A simple dal needs split lentils (dal) as the base, along with onions and
+tomatoes for flavour. Turmeric and chilli powder from Sahachari's spice
+section round out the seasoning for a comforting, everyday dish.
+
+================================================================================
+SUGGEST VEGETABLES FOR A SIDE DISH WITH RICE AND DAL?
+================================================================================
+SHORT ANSWER: Potatoes, beans, or pumpkin make simple, comforting side
+dishes to go with rice and dal.
+
+Potatoes, beans, or pumpkin can be lightly sautéed or curried as an easy
+side dish to accompany rice and dal. These vegetables are versatile and
+commonly stocked in Sahachari's grocery selection.
+
+================================================================================
+WHAT SHOULD I ORDER FOR A SMALL HOUSEHOLD OF TWO PEOPLE?
+================================================================================
+SHORT ANSWER: Smaller quantities of staples like rice, dal, milk, and a
+few vegetables are usually enough for a two-person household.
+
+For a household of two, smaller quantities of essentials work well, such as
+1 kg rice, a small pack of dal, half a litre of milk, and a couple of
+vegetables like onions and tomatoes. You can adjust amounts in your order
+based on your weekly consumption.
+
+================================================================================
+RECOMMEND FRUITS THAT STAY FRESH LONGER?
+================================================================================
+SHORT ANSWER: Apples generally stay fresh longer compared to more delicate
+fruits like bananas and mangoes.
+
+Apples tend to have a longer shelf life when stored properly, compared to
+softer fruits like bananas and mangoes which ripen and spoil faster. If
+you're stocking up for the week, apples are a more durable choice.
+
+================================================================================
+WHAT VEGETABLES ARE GOOD FOR DIABETIC-FRIENDLY MEALS?
+================================================================================
+SHORT ANSWER: Leafy vegetables, beans, and bitter gourd are often considered
+diabetic-friendly, but please consult a doctor for personalised advice.
+
+Vegetables like beans, bitter gourd, and leafy greens are commonly considered
+suitable for diabetic-friendly diets due to their lower glycemic impact.
+However, dietary needs vary by individual, so it's best to consult a doctor
+or nutritionist for guidance tailored to your health condition.
+
+================================================================================
+SUGGEST ITEMS FOR MAKING A SIMPLE SALAD?
+================================================================================
+SHORT ANSWER: Cucumber, tomatoes, carrots, and onions make a simple, fresh
+everyday salad.
+
+A basic salad can be made with cucumber, tomatoes, carrots, and onions, cut
+fresh and tossed with a little salt and lemon. These vegetables are easy to
+order fresh through the Sahachari app or chatbot.
+
+================================================================================
+WHAT VEGETABLES ARE COMMONLY USED IN KERALA SADYA (FEAST)?
+================================================================================
+SHORT ANSWER: Vegetables like drumstick, raw banana, yam, pumpkin, and beans
+are commonly used in a traditional Kerala sadya.
+
+A traditional Kerala sadya features a variety of vegetables such as
+drumstick, raw banana, yam, pumpkin, and beans across dishes like avial,
+thoran, and olan. Availability of these may vary based on local vendor
+stock, so check the app for what's currently offered in your area.
+
+================================================================================
+RECOMMEND GROCERY ITEMS FOR A FESTIVAL OR SPECIAL OCCASION?
+================================================================================
+SHORT ANSWER: Rice, dal, ghee or butter, milk, and seasonal vegetables and
+fruits are good staples for festival cooking.
+
+For festival cooking, having rice, dal, milk, and butter on hand covers the
+basics for sweets and special dishes. Adding seasonal vegetables and fruits
+rounds out your festive menu. Check the Offers section in the app, as
+Sahachari occasionally runs seasonal deals around festivals.
+
+================================================================================
+CAN I ASK THE CHATBOT TO SUGGEST ITEMS BASED ON WHAT I'M COOKING?
+================================================================================
+SHORT ANSWER: Yes, just tell the chatbot what dish you're making and it can
+suggest relevant ingredients to add to your cart.
+
+You can tell the Sahachari chatbot what you're planning to cook, for example
+"I'm making sambar, what do I need?" and it will suggest relevant ingredients
+based on what's available. You can then confirm and add the suggested items
+to your cart directly through the chat.
+
+================================================================================
+WHAT DO I DO IF THE ITEM I WANT IS NOT LISTED IN THE APP?
+================================================================================
+SHORT ANSWER: If an item is not available, try asking the chatbot or check
+back later as stock depends on local vendors. Contact support for requests.
+
+If an item you're looking for isn't listed, it may not currently be supplied
+by local vendors in your area. You can ask the chatbot to check availability,
+or contact Sahachari support through the Help section to request that the
+item be added when possible.
+
+================================================================================
+CAN I ASK THE CHATBOT FOR THE PRICE BEFORE ADDING AN ITEM TO MY CART?
+================================================================================
+SHORT ANSWER: Yes, you can ask the chatbot the price of an item before
+deciding to add it to your cart.
+
+You can ask the chatbot something like "what is the price of onions?" before
+deciding whether to add it to your cart. The chatbot will let you know the
+current price so you can plan your order accordingly.
+
+================================================================================
+HOW DO I KNOW THE TOTAL COST OF MY ORDER BEFORE CHECKOUT?
+================================================================================
+SHORT ANSWER: The chatbot or app will show your cart total, including
+delivery charges, before you confirm checkout.
+
+Before you say "checkout," you can ask the chatbot to "show my cart" to see
+all items and the total cost. Delivery charges based on your pincode are
+also shown clearly at this stage, so you know the full amount before
+confirming your order.
+
+================================================================================
+CAN I ASK THE CHATBOT WHAT VEGETABLES ARE IN SEASON RIGHT NOW?
+================================================================================
+SHORT ANSWER: You can ask the chatbot, though seasonal availability depends
+on local vendor stock at the time of your order.
+
+You're welcome to ask the chatbot what's currently in season, and it will
+share what's available based on local vendor supply at that time. Since
+stock can vary day to day, checking the products section in the app is also
+a good way to confirm current availability.
+
+================================================================================
+CAN THE CHATBOT REMIND ME TO REORDER MY USUAL GROCERIES EVERY WEEK?
+================================================================================
+SHORT ANSWER: Automatic reminders are not available yet, but you can easily
+reorder your usual items using the Reorder option in the app.
+
+Sahachari does not currently send automatic weekly reminders, but you can
+quickly repeat your usual grocery list anytime using the Reorder button on
+a past order in the Orders screen, or by telling the chatbot the items you
+typically buy.
+
+================================================================================
+IS THERE A WAY TO COMPARE PRICES OF DIFFERENT VEGETABLES BEFORE ORDERING?
+================================================================================
+SHORT ANSWER: Yes, browse the products section in the app to see prices for
+all available vegetables before adding them to your cart.
+
+You can browse the products section in the Sahachari app to view prices of
+different vegetables side by side before deciding what to order. You can
+also ask the chatbot directly for the price of specific items you're
+considering.
+
+================================================================================
+CAN I ASK THE CHATBOT FOR A HEALTHY GROCERY LIST FOR THE WEEK?
+================================================================================
+SHORT ANSWER: Yes, you can ask the chatbot for healthy grocery suggestions,
+and it can help add suitable items to your cart.
+
+You can ask the chatbot something like "suggest a healthy grocery list for
+the week" and it will recommend a mix of vegetables, fruits, and staples.
+You can then review the suggestions and confirm which ones to add to your
+cart before checkout.
+
+================================================================================
+WHAT IF I DON'T KNOW THE EXACT QUANTITY I NEED?
+================================================================================
+SHORT ANSWER: You can ask the chatbot for a suggested quantity based on
+household size, or start with a small amount and reorder if needed.
+
+If you're unsure how much to order, you can ask the chatbot for a suggestion
+based on your household size, for example "how much rice for a family of
+four?" Alternatively, you can order a smaller quantity first and place
+another order later if you need more.
+
+================================================================================
+CAN I ASK THE CHATBOT TO SPLIT MY ORDER INTO TWO DELIVERIES?
+================================================================================
+SHORT ANSWER: Splitting a single order into multiple deliveries is not
+supported. Place separate orders if you need items delivered at different times.
+
+Currently, Sahachari processes each order as a single delivery. If you need
+some items delivered at a different time, you'll need to place separate
+orders for each batch. Simply tell the chatbot what you need for each
+order individually.
+
+================================================================================
+CAN I ASK THE CHATBOT ABOUT THE NUTRITIONAL VALUE OF A PRODUCT?
+================================================================================
+SHORT ANSWER: The chatbot can share general nutritional information, but
+for detailed dietary advice, please consult a nutritionist or doctor.
+
+You can ask the chatbot general questions like "is carrot good for eyes?"
+and it can share commonly known nutritional information. However, for
+specific dietary plans or medical conditions, it's best to consult a
+qualified nutritionist or doctor.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO REPEAT MY LAST ORDER?
+================================================================================
+SHORT ANSWER: Say "reorder my last order" to the chatbot and it will add
+the same items to your cart again.
+
+You can simply tell the chatbot "reorder my last order" or "repeat my
+previous order," and it will pull up the items from your most recent order
+and add them to your cart for you to review and checkout.
+
+================================================================================
+CAN I ASK THE CHATBOT FOR VEGETABLE COMBINATIONS FOR A SPECIFIC RECIPE NAME?
+================================================================================
+SHORT ANSWER: Yes, mention the recipe name to the chatbot and it can suggest
+commonly used vegetables for that dish.
+
+You can tell the chatbot a recipe name, for example "what vegetables do I
+need for avial?" and it will suggest the commonly used ingredients for that
+dish. You can then confirm and have them added to your cart.
+
+================================================================================
+WHAT HAPPENS IF I ASK THE CHATBOT FOR AN ITEM SAHACHARI DOESN'T SELL?
+================================================================================
+SHORT ANSWER: The chatbot will let you know if an item isn't available and
+may suggest similar alternatives if possible.
+
+If you ask for an item that Sahachari doesn't currently sell, the chatbot
+will inform you that it's unavailable. It may suggest a similar alternative
+product if one exists, or you can contact support to request the item be
+added in the future.
+
+================================================================================
+CAN I ASK THE CHATBOT TO HELP ME PLAN MEALS FOR THE WHOLE WEEK?
+================================================================================
+SHORT ANSWER: The chatbot can suggest ingredients for individual meals, but
+full weekly meal planning is not a dedicated feature yet.
+
+While the chatbot can help suggest ingredients for specific dishes you
+mention, a complete weekly meal-planning feature is not currently available.
+You can ask it dish by dish, such as "what do I need for dinner tonight,"
+and build your list that way.
+
+================================================================================
+CAN I ASK THE CHATBOT IF AN ITEM IS ORGANIC OR LOCALLY SOURCED?
+================================================================================
+SHORT ANSWER: You can ask, but availability of organic items depends on what
+local vendors currently supply.
+
+You're welcome to ask the chatbot whether a specific item is organic or
+locally sourced. Since Sahachari sources from local vendors and farmers in
+Kerala, availability of organic options depends on current vendor supply,
+so it's good to confirm in the app as well.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO SHOW ME TODAY'S OFFERS?
+================================================================================
+SHORT ANSWER: Ask the chatbot "are there any offers today?" and it will
+share current promotions if available.
+
+You can simply ask the chatbot "are there any offers today?" or "any deals
+right now?" and it will let you know about current promotions. You can also
+check the Offers section in the app for the same information.
+
+================================================================================
+CAN THE CHATBOT HELP ME DECIDE BETWEEN TWO SIMILAR PRODUCTS?
+================================================================================
+SHORT ANSWER: The chatbot can share basic details like price and availability
+to help you choose between similar products.
+
+If you're deciding between two similar items, you can ask the chatbot for
+details like price or availability for each, for example "is curd or paneer
+cheaper right now?" This can help you make a quicker decision while shopping.
+
+================================================================================
+CAN I ASK THE CHATBOT TO HOLD MY ORDER FOR A FEW HOURS BEFORE CONFIRMING?
+================================================================================
+SHORT ANSWER: Items stay in your cart until you're ready, but the order is
+only placed once you say "checkout."
+
+Your cart items remain saved even if you step away, so there's no need to
+rush. The order is only placed once you explicitly say "checkout" or "place
+my order," so you can take your time deciding before confirming.
+
+================================================================================
+CAN I ASK THE CHATBOT TO SUGGEST A SUBSTITUTE FOR AN OUT-OF-STOCK ITEM?
+================================================================================
+SHORT ANSWER: Yes, the chatbot can suggest a similar alternative if the
+item you want is currently unavailable.
+
+If an item you ask for is out of stock, you can ask the chatbot "what can I
+use instead of X?" and it will try to suggest a similar alternative based on
+what's currently available. You can then decide whether to add the
+substitute to your cart.
+
+================================================================================
+HOW DO I ASK THE CHATBOT HOW MUCH MY CART CURRENTLY COSTS?
+================================================================================
+SHORT ANSWER: Say "show my cart" or "what is my cart total" and the chatbot
+will display your items and the running total.
+
+You can ask the chatbot "show my cart" or "what is my total so far" at any
+point while shopping, and it will list your current items along with the
+running cost. This helps you keep track before deciding to checkout.
+
+================================================================================
+CAN I ASK THE CHATBOT TO CLEAR MY ENTIRE CART?
+================================================================================
+SHORT ANSWER: Yes, say "clear my cart" or "empty my cart" and the chatbot
+will remove all items at once.
+
+If you want to start over, you can tell the chatbot "clear my cart" or
+"empty my cart," and it will remove all items in one go. You can then begin
+adding fresh items whenever you're ready.
+
+================================================================================
+CAN I ASK THE CHATBOT WHICH VEGETABLES ARE CURRENTLY CHEAPEST?
+================================================================================
+SHORT ANSWER: You can ask, and the chatbot will share current prices, though
+the cheapest options may vary based on vendor supply.
+
+You can ask the chatbot something like "which vegetables are cheapest right
+now?" and it will share current pricing information. Since prices depend on
+local vendor rates, the most affordable options can vary from day to day.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO CHECK IF MY PINCODE IS SERVICEABLE?
+================================================================================
+SHORT ANSWER: Tell the chatbot your pincode and it will let you know if
+delivery is available in your area.
+
+You can simply tell the chatbot your pincode, for example "is 680001
+serviceable?" and it will let you know whether Sahachari currently delivers
+to that area, along with any available delivery options.
+
+================================================================================
+CAN I ASK THE CHATBOT TO ADD ITEMS FROM MY WISHLIST DIRECTLY TO MY CART?
+================================================================================
+SHORT ANSWER: Yes, say "order my wishlist" and all saved wishlist items
+will be added to your cart for checkout.
+
+You can tell the chatbot "order my wishlist" and it will move all your
+saved wishlist items into your cart, ready for you to review and confirm
+at checkout.
+
+================================================================================
+CAN I ASK THE CHATBOT WHAT'S A GOOD COMBINATION FOR BREAKFAST, LUNCH, AND DINNER?
+================================================================================
+SHORT ANSWER: You can ask for suggestions meal by meal, and the chatbot will
+recommend relevant ingredients for each.
+
+While the chatbot doesn't plan a full day automatically, you can ask it
+separately for each meal, such as "what do I need for breakfast" and "what
+do I need for dinner," and it will suggest relevant ingredients you can add
+to your cart.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO CHECK THE STATUS OF MY REFUND?
+================================================================================
+SHORT ANSWER: The chatbot can share basic order status, but for detailed
+refund status, contact Sahachari support through the Help section.
+
+You can ask the chatbot about your order status, but for specific refund
+processing details, it's best to contact Sahachari support directly through
+the Help section in the app, where the team can check your payment records.
+
+================================================================================
+CAN I ASK THE CHATBOT FOR VEGETARIAN PROTEIN OPTIONS?
+================================================================================
+SHORT ANSWER: Paneer and dal are good vegetarian protein options available
+through Sahachari.
+
+You can ask the chatbot for vegetarian protein sources, and it may suggest
+items like paneer and dal, both available in Sahachari's dairy and staples
+sections. These are commonly used in Indian vegetarian cooking for protein.
+
+================================================================================
+CAN I ASK THE CHATBOT TO COMPARE TWO ORDERS I PLACED PREVIOUSLY?
+================================================================================
+SHORT ANSWER: You can view past orders individually in the Orders screen,
+though side-by-side comparison is not currently a feature.
+
+While the chatbot doesn't currently support comparing two past orders side
+by side, you can view each order individually in the Orders screen of the
+app to check the items and details of each.
+
+================================================================================
+HOW DO I ASK THE CHATBOT ABOUT DELIVERY CHARGES FOR MY AREA?
+================================================================================
+SHORT ANSWER: Tell the chatbot your pincode and it will share the delivery
+charge applicable for your location.
+
+You can ask the chatbot "what is the delivery charge for my pincode?" and
+it will let you know the applicable charge, which is calculated based on
+your location and selected delivery option.
+
+================================================================================
+CAN I ASK THE CHATBOT TO SUGGEST SNACKS FOR KIDS?
+================================================================================
+SHORT ANSWER: Bananas and packaged snacks available in the app are common
+suggestions for kids, depending on what's in stock.
+
+You can ask the chatbot for snack suggestions for children, and it may
+recommend simple options like bananas or packaged snacks available through
+Sahachari, depending on current stock in your area.
+
+================================================================================
+CAN I ASK THE CHATBOT IF AN ITEM HAS GONE UP IN PRICE RECENTLY?
+================================================================================
+SHORT ANSWER: The chatbot can confirm the current price, but historical
+price tracking is not currently available.
+
+You can ask the chatbot for the current price of an item, but it does not
+currently track or compare past pricing history. If you've noticed a price
+change and have concerns, you can contact Sahachari support for clarification.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO HELP ME BUY GIFTS FOR A FESTIVAL?
+================================================================================
+SHORT ANSWER: You can ask for festival grocery suggestions, though Sahachari
+focuses on groceries rather than dedicated gift items.
+
+You can ask the chatbot for festival-related grocery suggestions, such as
+ingredients for sweets or special dishes. Since Sahachari focuses on
+groceries and home services rather than gift items, dedicated festival
+gift hampers are not currently offered.
+
+================================================================================
+CAN I ASK THE CHATBOT WHY MY ORDER STATUS HASN'T CHANGED?
+================================================================================
+SHORT ANSWER: The chatbot can share your current order status, but for
+delays, contact Sahachari support for a detailed update.
+
+You can ask the chatbot "track my order" to see your current status. If the
+status hasn't changed for longer than expected, it's best to contact
+Sahachari support through the Help section so the team can check directly
+with the delivery partner.
+
+================================================================================
+CAN I ASK THE CHATBOT FOR A SHOPPING LIST BASED ON A BUDGET?
+================================================================================
+SHORT ANSWER: You can tell the chatbot your budget and it can try to
+suggest items that fit within it.
+
+You can tell the chatbot something like "suggest groceries under 500
+rupees" and it will try to recommend a combination of items that fits your
+budget, based on current prices in the app.
+
+================================================================================
+HOW DO I ASK THE CHATBOT TO BOOK A DISHWASHING SERVICE?
+================================================================================
+SHORT ANSWER: Check the services section in the app or ask the chatbot to
+book a dishwashing or home service for you.
+
+You can ask the chatbot something like "book a dishwashing service" and it
+will help guide you through booking, or you can check the services section
+in the app directly to see availability and book a convenient time slot.
+
+================================================================================
+CAN I ASK THE CHATBOT IF A PRODUCT IS SUITABLE FOR SENIOR CITIZENS?
+================================================================================
+SHORT ANSWER: The chatbot can share general product information, but for
+specific health-related advice, please consult a doctor.
+
+You can ask the chatbot general questions about a product, but for specific
+dietary suitability for senior citizens or any health condition, it's best
+to consult a doctor or nutritionist for guidance tailored to individual needs.
+
+================================================================================
+CAN I ASK THE CHATBOT TO SAVE MY USUAL ORDER AS A TEMPLATE?
+================================================================================
+SHORT ANSWER: A dedicated saved-template feature isn't available yet, but
+you can use the wishlist or Reorder option for similar convenience.
+
+While Sahachari doesn't yet have a dedicated "saved template" feature, you
+can use the wishlist to save items you order regularly, or use the Reorder
+button on a past order to quickly repeat your usual grocery list.
